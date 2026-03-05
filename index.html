@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="./resources/ol.css">
+    <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+    <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+    <link rel="stylesheet" href="./resources/qgis2web.css">
+
+    <style>
+        html, body {
+            background-color: #ffffff;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        }
+
+        #header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background: linear-gradient(90deg, 
+                #024589, 
+                #2f83d7, 
+                #5fa2e4, 
+                #a1ccf7, 
+                #bedbf1, 
+                #bfcedb
+            );
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+
+        #logo-left {
+            height: 50px;
+        }
+
+        #header h1 {
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            margin: 0 20px;
+            font-family: Arial, sans-serif;
+            flex: 1;
+            text-align: center;
+        }
+
+        .logo-right img {
+            height: 50px;
+            transition: transform 0.3s;
+        }
+
+        .logo-right img:first-child {
+            position: relative;
+            right: 350px;
+        }
+
+        .logo-right img:last-child {
+            position: relative;
+            right: 50px;
+        }
+
+        #panel-stats {
+            position: absolute;
+            top: 70px;       
+            left: 0;         
+            width: 250px;   
+            bottom: 0;       
+            background: linear-gradient(180deg, #024589, #5fa2e4);
+            color: white;
+            padding: 15px;
+            box-shadow: 2px 0 6px rgba(0,0,0,0.3);
+            overflow-y: auto; 
+            z-index: 900;
+            font-family: Arial, sans-serif;
+        }
+
+        #panel-stats h2 {
+            margin-top: 0;
+            font-size: 18px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            padding-bottom: 5px;
+        }
+
+        .stat-item {
+            margin: 10px 0;
+            font-size: 14px;
+            padding: 5px 10px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 5px;
+        }
+
+        #panel-right {
+            position: absolute;
+            top: 70px;
+            right: 0;
+            width: 230px;
+            bottom: 0;
+            background: linear-gradient(180deg, #5fa2e4, #a1ccf7);
+            color: white;
+            padding: 15px;
+            box-shadow: -2px 0 6px rgba(0,0,0,0.3);
+            overflow-y: auto;
+            z-index: 900;
+            font-family: Arial, sans-serif;
+        }
+
+        #map {
+            position: absolute;
+            top: 70px;        
+            left: 280px;      
+            right: 0px;
+            bottom: 0px;
+            width: auto !important;
+            height: auto !important; 
+            overflow: hidden;     
+        }
+
+        #overlayCreditos {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            z-index: 4000;
+        }
+
+        #ventanaCreditos {
+            position: fixed;
+            top: 51%;              
+            right: 0px;            
+            width: 200px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            display: none;
+            z-index: 5000;
+            font-family: Arial, sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        #ventanaCreditos.activo {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .header-cred {
+            background: linear-gradient(90deg, #024589, #2f83d7);
+            color: white;
+            padding: 3px 18px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-cred h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        #cerrarCreditos {
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .contenido-cred {
+            padding: 4px 10px;
+            font-size: 11px;
+            color: #333;
+        }
+
+        .contenido-cred a {
+            color: #024589;
+            text-decoration: none;
+        }
+
+        .contenido-cred a:hover {
+            text-decoration: underline;
+        }
+        .contenido-cred {
+            line-height: 1.2;
+        }
+    
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .logo-cred {
+            height: 28px;
+            width: auto;
+        }
+
+        .logo-central {
+            display: flex;
+            justify-content: center;  
+            align-items: center;
+            margin-bottom: 0px;
+        }
+
+        .logo-central img {
+            max-width: 180px;
+            height: auto;
+        }
+
+        .autor-cred {
+            font-size: 12px;
+            color: #444;
+            margin-top: 0px;
+        }
+
+        .autor-cred strong {
+            color: #024589;
+        }
+    </style>
+
+    <title>Mapa Web - Red Eléctrica</title>
+</head>
+
+<body>
+    <div id="header">
+        <img src="images/lemal.png" id="logo-left" alt="Lemal">
+        <h1>Sistema de Monitoreo del Control de Vegetación</h1>
+        <div class="logo-right">
+            <img src="images/Derrama.png" alt="Logo Coope">
+            <img src="images/logo.png" alt="Derrama">
+        </div>
+    </div>
+
+    <div id="panel-stats">
+        <h2>Estadísticas</h2>
+
+        <div style="margin-bottom:10px;">
+            <button id="btnPlayAnimacion">▶ Play</button>
+            <button id="btnPauseAnimacion">⏸ Pausa</button>
+            <button id="btnResetAnimacion">🔄 Reiniciar</button>
+        </div>
+
+        <div class="stat-item">
+            Velocidad simulación Rápido ⟵ ⟶ Lento
+            <input type="range" id="velocidadAnimacion" min="100" max="3000" step="100" value="3000">
+            <div style="display:flex; justify-content:space-between; margin-top:5px;">
+                <button id="btnMasVelocidad">+</button>
+                <button id="btnMenosVelocidad">-</button>
+            </div>
+        </div>
+
+        <div class="stat-item">Metros podados: <span id="stat-metros">0</span> m</div>
+        <div class="stat-item">Fecha: <span id="stat-fecha">--</span></div>
+        <div class="stat-item">Acumulado control (m): <span id="stat-acumulado_m">0</span> m</div>
+        <div class="stat-item">Acumulado control (km): <span id="stat-acumulado">0</span> km</div>
+        <div class="stat-item">promedio m/día: <span id="stat-promedio">0</span> m</div>
+        <div class="stat-item"><canvas id="chart-acumulado" width="230" height="150"></canvas></div>
+        <div class="stat-item"><canvas id="chart-mensual" width="230" height="150"></canvas></div>
+
+    </div>
+
+    <div id="map">
+        <div id="popup" class="ol-popup">
+            <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+            <div id="popup-content"></div>
+        </div>
+    </div>
+
+    <script src="resources/qgis2web_expressions.js"></script>
+    <script src="resources/proj4.js"></script>
+    <script>proj4.defs('EPSG:8908','+proj=tmerc +lat_0=0 +lon_0=-84 +k=0.9999 +x_0=500000 +y_0=0 +ellps=GRS80 +units=m +no_defs');</script>
+    <script src="./resources/functions.js"></script>
+    <script src="./resources/ol.js"></script>
+    <script src="./resources/ol-layerswitcher.js"></script>
+    <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+    <script src="layers/territorio_car_1.js"></script>
+    <script src="layers/distritos_car_2.js"></script>
+    <script src="layers/postes_01_2026_car_3.js"></script>
+    <script src="layers/control_vegetacion_car_4.js"></script>
+    <script src="layers/Red_BT_car_5.js"></script>
+    <script src="layers/Red_MT_car_6.js"></script>
+    <script src="styles/territorio_car_1_style.js"></script>
+    <script src="styles/distritos_car_2_style.js"></script>
+    <script src="styles/postes_01_2026_car_3_style.js"></script>
+    <script src="styles/control_vegetacion_car_4_style.js"></script>
+    <script src="styles/Red_BT_car_5_style.js"></script>
+    <script src="styles/Red_MT_car_6_style.js"></script>
+    <script src="./layers/layers.js" type="text/javascript"></script> 
+    <script src="./resources/Autolinker.min.js"></script>
+    <script src="./resources/qgis2web.js"></script>        
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <div id="overlayCreditos"></div>
+    <div id="ventanaCreditos">
+        <div class="header-cred">
+            <div class="header-left">
+                <h3>Créditos</h3>
+            </div>
+            <span id="cerrarCreditos">&times;</span>
+        </div>
+
+        <div class="contenido-cred">
+            <div class="logo-central">
+                <img src="images/portal2.png" alt="Portal Energético">
+            </div>
+
+            <p>
+                <a href="https://openlayers.org/" target="_blank">OpenLayers</a><br>
+                <a href="https://www.google.com/intl/en_US/help/terms_maps/" target="_blank">
+                Map data © Google – Satellite 2015</a>
+            </p>
+            <hr>
+
+            <div class="autor-cred">
+                <p>
+                    <strong>Desarrollado por:</strong><br>
+                    <strong>Alex Alberto Varela Quirós</strong><br>
+                    Geógrafo - Ingeniero Eléctrico
+                    <br>ing.alexvarela@gmail.com<br>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <button id="btnCreditos" style="
+        position:absolute;
+        bottom:10px;
+        right:10px;
+        z-index:4500;
+        background:#024589;
+        color:white;
+        border:none;
+        padding:6px 14px;
+        border-radius:6px;
+        cursor:pointer;
+        font-size:13px;
+        box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    ">
+        Créditos
+    </button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cerrar = document.getElementById("cerrarCreditos");
+            const ventana = document.getElementById("ventanaCreditos");
+
+            cerrar.addEventListener("click", function() {
+                ventana.style.display = "none";
+            });
+        });
+    </script>
+
+
+
+    <script>
+            function calcularDatosUltimaSemana(features) {
+
+                if (!features.length) return { labels: [], data: [] };
+                features.sort((a, b) => 
+                    new Date(a.get('fecha_registro')) - new Date(b.get('fecha_registro'))
+                );
+
+                const ultimaFecha = new Date(features[features.length - 1].get('fecha_registro'));
+                const year = ultimaFecha.getFullYear();
+                const onejan = new Date(year, 0, 1);
+                const semanaActual = Math.ceil((((ultimaFecha - onejan) / 86400000) + onejan.getDay() + 1) / 7);
+                const dias = {};
+                features.forEach(f => {
+                    const fechaStr = f.get('fecha_registro');
+                    if (!fechaStr) return;
+                    const fecha = new Date(fechaStr);
+                    const y = fecha.getFullYear();
+                    const onejan2 = new Date(y, 0, 1);
+                    const semana = Math.ceil((((fecha - onejan2) / 86400000) + onejan2.getDay() + 1) / 7);
+                    if (semana === semanaActual && y === year) {
+                        const dia = fecha.toISOString().split('T')[0]; // YYYY-MM-DD
+                        const longitud = parseFloat(f.get('longitud_m')) || 0;
+                        if (!dias[dia]) dias[dia] = 0;
+                        dias[dia] += longitud;
+                    }
+                });
+
+                const labels = Object.keys(dias).sort();
+                const data = labels.map(l => dias[l]);
+                return { labels, data };
+            }
+
+            function crearGraficoGeneral() {
+                const source = lyr_control_vegetacion_car_4.getSource();
+                const features = source.getFeatures();
+                if (!features.length) return;
+                const ctx = document.getElementById('chart-acumulado').getContext('2d');
+                const { labels, data } = calcularDatosUltimaSemana(features);
+                window.chartGeneral = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Metros por día (Última semana)',
+                            data: data,
+                            backgroundColor: 'rgba(255,255,255,0.6)'
+                        }]
+                    },
+                    options: {
+                        responsive: false,
+                        plugins: {
+                            legend: {
+                                labels: {
+                                    color: '#ffffff',
+                                    font: { size: 10 }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                ticks: { 
+                                    color: '#ffffff',
+                                    font: { size: 9 }
+                                }
+                            },
+                            y: {
+                                ticks: { 
+                                    color: '#ffffff',
+                                    font: { size: 9 }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+    </script>
+
+    <script>
+        function calcularAcumuladoMensual3Meses(features) {
+
+            if (!features.length) return { labels: [], data: [] };
+            features.sort((a, b) => 
+                new Date(a.get('fecha_registro')) - new Date(b.get('fecha_registro'))
+            );
+            const ultimaFecha = new Date(features[features.length - 1].get('fecha_registro'));
+            const meses = {};
+            features.forEach(f => {
+                const fechaStr = f.get('fecha_registro');
+                if (!fechaStr) return;
+                const fecha = new Date(fechaStr);
+                const diffMeses = 
+                    (ultimaFecha.getFullYear() - fecha.getFullYear()) * 12 +
+                    (ultimaFecha.getMonth() - fecha.getMonth());
+
+                if (diffMeses >= 0 && diffMeses < 3) {
+                    const key = fecha.getFullYear() + '-' + 
+                                String(fecha.getMonth() + 1).padStart(2,'0');
+                    const longitud = parseFloat(f.get('longitud_m')) || 0;
+                    if (!meses[key]) meses[key] = 0;
+                    meses[key] += longitud;
+                }
+            });
+            const labels = Object.keys(meses).sort();
+            const data = labels.map(l => meses[l]);
+            return { labels, data };
+        }
+
+        function crearGraficoMensual() {
+            const source = lyr_control_vegetacion_car_4.getSource();
+            const features = source.getFeatures();
+            if (!features.length) return;
+            const ctx = document.getElementById('chart-mensual').getContext('2d');
+            const { labels, data } = calcularAcumuladoMensual3Meses(features);
+
+            window.chartMensual = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Acumulado mensual (Últimos 3 meses)',
+                        data: data,
+                        backgroundColor: 'rgba(255,255,255,0.6)'
+                    }]
+                },
+                options: {
+                    responsive: false,
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: '#ffffff',
+                                font: { size: 10 }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            ticks: { 
+                                color: '#ffffff',
+                                font: { size: 9 }
+                            }
+                        },
+                        y: {
+                            ticks: { 
+                                color: '#ffffff',
+                                font: { size: 9 }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        map.once('rendercomplete', function() {
+            crearGraficoGeneral();   
+            crearGraficoMensual();
+        });
+    </script>
+
+    <script>
+        function calcularPromedioUltimos5Dias(features){
+            const dias = {};
+            features.forEach(f => {
+                const fechaStr = f.get('fecha_registro');
+                if(!fechaStr) return;
+
+                const fecha = new Date(fechaStr);
+                const dia = fecha.toISOString().split('T')[0];
+
+                const longitud = parseFloat(f.get('longitud_m')) || 0;
+
+                if(!dias[dia]) dias[dia] = 0;
+                dias[dia] += longitud;
+            });
+            const diasOrdenados = Object.keys(dias).sort();
+            const ultimos5 = diasOrdenados.slice(-5);
+            let total = 0;
+            ultimos5.forEach(d => {
+                total += dias[d];
+            });
+            if(ultimos5.length === 0) return 0;
+            return total / ultimos5.length;
+
+        }
+    </script>
+    <script>
+        document.getElementById("btnMasVelocidad").addEventListener("click", function () {
+            let slider = document.getElementById("velocidadAnimacion");
+            let nuevoValor = Math.max(100, parseInt(slider.value) - 100);
+            slider.value = nuevoValor;
+            velocidadAnimacion = nuevoValor;
+        });
+    </script>
+    <script>
+        document.getElementById("btnMenosVelocidad").addEventListener("click", function () {
+            let slider = document.getElementById("velocidadAnimacion");
+            let nuevoValor = Math.min(3000, parseInt(slider.value) + 100);
+            slider.value = nuevoValor;
+            velocidadAnimacion = nuevoValor;
+        });
+    </script>
+    
+    <script>
+        let intervaloAnimacion = null;
+        const sliderVelocidad = document.getElementById("velocidadAnimacion");
+        let velocidadAnimacion = parseInt(sliderVelocidad.value);
+        let animacionActiva = false;
+        let animacionPausada = false;
+        let features = [];
+        let acumulado = 0;
+        let i = 0;
+
+        sliderVelocidad.addEventListener("input", function () {
+            velocidadAnimacion = parseInt(this.value);
+        });
+        document.getElementById("btnPlayAnimacion").addEventListener("click", function () {
+            if(animacionActiva && !animacionPausada) return;
+            const source = lyr_control_vegetacion_car_4.getSource();
+            features = source.getFeatures();
+            lyr_control_vegetacion_car_4.setVisible(true);
+            if(!animacionActiva){
+                features.forEach(f => f.setStyle(new ol.style.Style(null)));
+                features.sort((a,b)=> 
+                    new Date(a.get('fecha_registro')) - new Date(b.get('fecha_registro'))
+                );
+                acumulado = 0;
+                i = 0;
+            }
+            animacionActiva = true;
+            animacionPausada = false;
+            mostrarSiguiente();
+        });
+
+        document.getElementById("btnPauseAnimacion").addEventListener("click", function () {
+            animacionPausada = true;
+        });
+
+        document.getElementById("btnResetAnimacion").addEventListener("click", function () {
+            const source = lyr_control_vegetacion_car_4.getSource();
+            const feats = source.getFeatures();
+            feats.forEach(f => f.setStyle(new ol.style.Style(null)));
+            acumulado = 0;
+            i = 0;
+            document.getElementById('stat-metros').textContent = "0";
+            document.getElementById('stat-fecha').textContent = "--";
+            document.getElementById('stat-acumulado').textContent = "0";
+            document.getElementById('stat-acumulado_m').textContent = "0";
+            document.getElementById('stat-promedio').textContent = "0";
+            animacionActiva = false;
+            animacionPausada = false;
+        });
+
+        function mostrarSiguiente(){
+            if(animacionPausada) return;
+            if(i >= features.length){
+                animacionActiva = false;
+                return;
+            }
+            const feat = features[i];
+            feat.setStyle(eval(feat.get('ol_style')));
+            const longitud_m = parseFloat(feat.get('longitud_m')) || 0;
+            acumulado += longitud_m;
+            let fechaObj = new Date(feat.get('fecha_registro'));
+            let fechaFormateada =
+                fechaObj.getFullYear() + '-' +
+                String(fechaObj.getMonth()+1).padStart(2,'0') + '-' +
+                String(fechaObj.getDate()).padStart(2,'0') + ' ' +
+                String(fechaObj.getHours()).padStart(2,'0') + ':' +
+                String(fechaObj.getMinutes()).padStart(2,'0') + ':' +
+                String(fechaObj.getSeconds()).padStart(2,'0');
+
+            document.getElementById('stat-metros').textContent = longitud_m.toFixed(2);
+            document.getElementById('stat-fecha').textContent = fechaFormateada;
+            document.getElementById('stat-acumulado').textContent = (acumulado / 1000).toFixed(2);
+            document.getElementById('stat-acumulado_m').textContent = acumulado.toFixed(2);
+            let promedio = calcularPromedioUltimos5Dias(features);
+            document.getElementById('stat-promedio').textContent = promedio.toFixed(2);
+            i++;
+            setTimeout(mostrarSiguiente, velocidadAnimacion);
+        }
+    </script>
+</body>
+</html>
