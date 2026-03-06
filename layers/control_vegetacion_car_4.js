@@ -103,70 +103,30 @@ var json_control_vegetacion_car_4 = {
         {
             "type": "Feature",
             "properties": {
-                "fid": 13,
+                "fid": 38,
                 "codigo_circ": null,
                 "ruta": null,
-                "poste inicial": "A1010",
-                "poste final": "A1010",
-                "longitud_m": 818.0581524277669,
+                "poste inicial": "A0258",
+                "poste final": "A0259",
+                "longitud_m": 41.80319766544092,
                 "proyecto": null,
-                "fecha_registro": "2026-03-04T16:03:12",
-                "responsable": "Alex",
-                "coord_x_ini": 467822.3588,
-                "coord_y_ini": 1130395.738,
-                "coord_x_fin": 467500.4309,
-                "coord_y_fin": 1129741.743,
+                "fecha_registro": "2026-03-04T06:00:00",
+                "responsable": "Ronal",
+                "coord_x_ini": 457216.9977894504,
+                "coord_y_ini": 1126912.1637012595,
+                "coord_x_fin": 457229.5473790081,
+                "coord_y_fin": 1126872.2887073788,
                 "observacion": null
             },
             "geometry": {
                 "coordinates": [
                     [
-                        -84.2937166016341,
-                        10.222761492592612
+                        -84.39048227344891,
+                        10.191163012790623
                     ],
                     [
-                        -84.29407105513432,
-                        10.222251225229103
-                    ],
-                    [
-                        -84.29475799047142,
-                        10.221435375519095
-                    ],
-                    [
-                        -84.29482049756346,
-                        10.22069415876256
-                    ],
-                    [
-                        -84.29529726052654,
-                        10.220087694105388
-                    ],
-                    [
-                        -84.29609756449052,
-                        10.219645555982323
-                    ],
-                    [
-                        -84.29655956132822,
-                        10.219005856897981
-                    ],
-                    [
-                        -84.29632320527564,
-                        10.218753349294118
-                    ],
-                    [
-                        -84.29650683287531,
-                        10.218449465064399
-                    ],
-                    [
-                        -84.29680782533711,
-                        10.218323150926691
-                    ],
-                    [
-                        -84.29672287321623,
-                        10.217569274099239
-                    ],
-                    [
-                        -84.29664963947772,
-                        10.21684565791344
+                        -84.39036729593771,
+                        10.190802618040761
                     ]
                 ],
                 "type": "LineString"
@@ -175,78 +135,30 @@ var json_control_vegetacion_car_4 = {
         {
             "type": "Feature",
             "properties": {
-                "fid": 14,
+                "fid": 39,
                 "codigo_circ": null,
                 "ruta": null,
-                "poste inicial": "A1010",
-                "poste final": "A1010",
-                "longitud_m": 688.0871490627798,
+                "poste inicial": "O0061",
+                "poste final": "O0060",
+                "longitud_m": 120.25266818775307,
                 "proyecto": null,
-                "fecha_registro": "2026-03-04T16:03:50",
-                "responsable": "Alex",
-                "coord_x_ini": 467500.4309,
-                "coord_y_ini": 1129741.743,
-                "coord_x_fin": 468115.2492,
-                "coord_y_fin": 1129915.156,
+                "fecha_registro": "2026-01-06T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449282.9168,
+                "coord_y_ini": 1125503.567,
+                "coord_x_fin": 449330.6343,
+                "coord_y_fin": 1125393.187,
                 "observacion": null
             },
             "geometry": {
                 "coordinates": [
                     [
-                        -84.29664963947772,
-                        10.21684565791344
+                        -84.46287709463809,
+                        10.178332714369782
                     ],
                     [
-                        -84.2962160931784,
-                        10.216916287389429
-                    ],
-                    [
-                        -84.29554558040806,
-                        10.216935150827657
-                    ],
-                    [
-                        -84.29535969687103,
-                        10.21713975046665
-                    ],
-                    [
-                        -84.29513442630737,
-                        10.217663329098702
-                    ],
-                    [
-                        -84.29477704386714,
-                        10.217983328197683
-                    ],
-                    [
-                        -84.29445481394296,
-                        10.217904053019623
-                    ],
-                    [
-                        -84.29418824154185,
-                        10.218051075445665
-                    ],
-                    [
-                        -84.29387479978732,
-                        10.21807702728479
-                    ],
-                    [
-                        -84.29361262175969,
-                        10.218017923266466
-                    ],
-                    [
-                        -84.29237789503117,
-                        10.218177930394765
-                    ],
-                    [
-                        -84.29163676596478,
-                        10.21828603583143
-                    ],
-                    [
-                        -84.29134382980058,
-                        10.218297563588836
-                    ],
-                    [
-                        -84.29103917646225,
-                        10.218418649945143
+                        -84.46244016675851,
+                        10.177335332872154
                     ]
                 ],
                 "type": "LineString"
@@ -255,38 +167,30 @@ var json_control_vegetacion_car_4 = {
         {
             "type": "Feature",
             "properties": {
-                "fid": 15,
+                "fid": 40,
                 "codigo_circ": null,
                 "ruta": null,
-                "poste inicial": "A1010",
-                "poste final": "A1010",
-                "longitud_m": 465.2661362310167,
+                "poste inicial": "O0057",
+                "poste final": "O0154",
+                "longitud_m": 120.27206869114013,
                 "proyecto": null,
-                "fecha_registro": "2026-03-04T16:04:26",
-                "responsable": "Alex",
-                "coord_x_ini": 468115.2492,
-                "coord_y_ini": 1129915.156,
-                "coord_x_fin": 468455.6415,
-                "coord_y_fin": 1129608.277,
+                "fecha_registro": "2026-01-06T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449659.6966,
+                "coord_y_ini": 1125131.837,
+                "coord_x_fin": 449747.6341,
+                "coord_y_fin": 1125049.786,
                 "observacion": null
             },
             "geometry": {
                 "coordinates": [
                     [
-                        -84.29103917646225,
-                        10.218418649945143
+                        -84.45943362725656,
+                        10.174976573523063
                     ],
                     [
-                        -84.29089563778369,
-                        10.217999183057056
-                    ],
-                    [
-                        -84.28942398370985,
-                        10.216848489196465
-                    ],
-                    [
-                        -84.28792965751073,
-                        10.215646723111515
+                        -84.4586300196225,
+                        10.174235836857969
                     ]
                 ],
                 "type": "LineString"
@@ -295,38 +199,842 @@ var json_control_vegetacion_car_4 = {
         {
             "type": "Feature",
             "properties": {
-                "fid": 16,
+                "fid": 41,
                 "codigo_circ": null,
                 "ruta": null,
-                "poste inicial": "A1010",
-                "poste final": "A1010",
-                "longitud_m": 350.44133035515983,
+                "poste inicial": "O0056",
+                "poste final": "O0055",
+                "longitud_m": 147.6473543191477,
                 "proyecto": null,
-                "fecha_registro": "2026-03-04T16:06:12",
-                "responsable": "Alex",
-                "coord_x_ini": 467729.758,
-                "coord_y_ini": 1130733.562,
-                "coord_x_fin": 467822.3588,
-                "coord_y_fin": 1130395.738,
+                "fecha_registro": "2026-01-06T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449776.1951,
+                "coord_y_ini": 1125006.505,
+                "coord_x_fin": 449796.2109,
+                "coord_y_fin": 1124860.74,
                 "observacion": null
             },
             "geometry": {
                 "coordinates": [
                     [
-                        -84.29456466541929,
-                        10.225815205180337
+                        -84.45836880421346,
+                        10.173844877835974
                     ],
                     [
-                        -84.29433535347579,
-                        10.224875662104779
+                        -84.4583351162534,
+                        10.173782882274157
                     ],
                     [
-                        -84.29400807330582,
-                        10.223859145402635
+                        -84.45818425456099,
+                        10.172527202895305
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 42,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "O0153",
+                "poste final": "O0192",
+                "longitud_m": 116.0013073013283,
+                "proyecto": null,
+                "fecha_registro": "2026-01-06T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449821.4064,
+                "coord_y_ini": 1124518.523,
+                "coord_x_fin": 449877.3381,
+                "coord_y_fin": 1124420.784,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45794990506727,
+                        10.169433377539523
                     ],
                     [
-                        -84.2937166016341,
-                        10.222761492592612
+                        -84.45782156116546,
+                        10.168959701201251
+                    ],
+                    [
+                        -84.4574382039403,
+                        10.168550385747194
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 43,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "O0022",
+                "poste final": "O0025",
+                "longitud_m": 166.6925176169416,
+                "proyecto": null,
+                "fecha_registro": "2026-01-07T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 451166.4322,
+                "coord_y_ini": 1123191.269,
+                "coord_x_fin": 451283.9732,
+                "coord_y_fin": 1123115.366,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.44565829692908,
+                        10.157449947495001
+                    ],
+                    [
+                        -84.44559092155062,
+                        10.156965522256657
+                    ],
+                    [
+                        -84.44521156842816,
+                        10.15691506142532
+                    ],
+                    [
+                        -84.44458468466445,
+                        10.156765126505412
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 44,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "O0025",
+                "poste final": "O0158",
+                "longitud_m": 131.99656811177096,
+                "proyecto": null,
+                "fecha_registro": "2026-01-08T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 451411.86677054403,
+                "coord_y_ini": 1123098.288516495,
+                "coord_x_fin": 451283.9732,
+                "coord_y_fin": 1123115.366,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.44341733361554,
+                        10.156612300604678
+                    ],
+                    [
+                        -84.443808403902,
+                        10.15654454323267
+                    ],
+                    [
+                        -84.44458468466445,
+                        10.156765126505412
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 45,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "O0106",
+                "poste final": "O0108",
+                "longitud_m": 135.94445520205755,
+                "proyecto": null,
+                "fecha_registro": "2026-01-08T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449718.7502,
+                "coord_y_ini": 1122515.266,
+                "coord_x_fin": 449809.1297,
+                "coord_y_fin": 1122413.722,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45886093709893,
+                        10.151319655582403
+                    ],
+                    [
+                        -84.45846254397289,
+                        10.150869828014258
+                    ],
+                    [
+                        -84.4580348567559,
+                        10.150402699187035
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 46,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "P0045",
+                "poste final": "P0077",
+                "longitud_m": 159.51819683874655,
+                "proyecto": null,
+                "fecha_registro": "2026-01-13T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449802.8154099913,
+                "coord_y_ini": 1122279.7498240282,
+                "coord_x_fin": 449644.26955577073,
+                "coord_y_fin": 1122289.0727377527,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45809075623443,
+                        10.149191310907561
+                    ],
+                    [
+                        -84.45851175643452,
+                        10.149168427854415
+                    ],
+                    [
+                        -84.45896666664247,
+                        10.14925167034889
+                    ],
+                    [
+                        -84.45953770617193,
+                        10.149273581104017
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 47,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "P0077",
+                "poste final": "P0079",
+                "longitud_m": 123.67189707199337,
+                "proyecto": null,
+                "fecha_registro": "2026-01-14T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449644.2696,
+                "coord_y_ini": 1122289.073,
+                "coord_x_fin": 449520.74647092336,
+                "coord_y_fin": 1122294.3815344465,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.4595377057717,
+                        10.149273583475692
+                    ],
+                    [
+                        -84.46002681286744,
+                        10.14930687273166
+                    ],
+                    [
+                        -84.46066499999993,
+                        10.149320000110553
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 48,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "NULP0037",
+                "poste final": "P0038",
+                "longitud_m": 65.65581604566754,
+                "proyecto": null,
+                "fecha_registro": "2026-02-18T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449641.73588263226,
+                "coord_y_ini": 1121809.7887102903,
+                "coord_x_fin": 449706.66720576474,
+                "coord_y_fin": 1121800.0619710172,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45955464697963,
+                        10.144940108057746
+                    ],
+                    [
+                        -84.45896199081598,
+                        10.144852992727758
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 49,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "P0025",
+                "poste final": "P0081",
+                "longitud_m": 110.09087525539712,
+                "proyecto": null,
+                "fecha_registro": "2026-01-15T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449653.8877,
+                "coord_y_ini": 1120865.43,
+                "coord_x_fin": 449719.4442,
+                "coord_y_fin": 1120942.988,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45943158876534,
+                        10.136401852058205
+                    ],
+                    [
+                        -84.45893476873027,
+                        10.136691546777756
+                    ],
+                    [
+                        -84.45883436614231,
+                        10.137103928216892
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 50,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "P0061",
+                "poste final": "P0025",
+                "longitud_m": 173.67334135865048,
+                "proyecto": null,
+                "fecha_registro": "2026-01-16T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449719.4442094743,
+                "coord_y_ini": 1120942.9882962503,
+                "coord_x_fin": 449735.8547,
+                "coord_y_fin": 1121114.628,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45883436605966,
+                        10.13710393089556
+                    ],
+                    [
+                        -84.45866301817821,
+                        10.137904230314549
+                    ],
+                    [
+                        -84.45868682282915,
+                        10.138656019338299
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 51,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "P0027",
+                "poste final": "P0003",
+                "longitud_m": 70.78135164201005,
+                "proyecto": null,
+                "fecha_registro": "2026-01-19T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449735.85467177525,
+                "coord_y_ini": 1121114.6283549557,
+                "coord_x_fin": 449732.8182,
+                "coord_y_fin": 1121184.992,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45868682309127,
+                        10.138656022547266
+                    ],
+                    [
+                        -84.45872929902026,
+                        10.139252934847542
+                    ],
+                    [
+                        -84.45871543684252,
+                        10.139292176281266
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 52,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "P0081",
+                "poste final": "P0050",
+                "longitud_m": 179.9188838700905,
+                "proyecto": null,
+                "fecha_registro": "2026-01-20T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449653.8877,
+                "coord_y_ini": 1120865.43,
+                "coord_x_fin": 449564.8979,
+                "coord_y_fin": 1120717.417,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45943158876534,
+                        10.136401852058205
+                    ],
+                    [
+                        -84.4595804617148,
+                        10.135716821669298
+                    ],
+                    [
+                        -84.46024173445895,
+                        10.135062457045782
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 53,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "P0010",
+                "poste final": "P0012",
+                "longitud_m": 117.27699991265393,
+                "proyecto": null,
+                "fecha_registro": "2026-02-18T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449461.93071582733,
+                "coord_y_ini": 1120591.9616157606,
+                "coord_x_fin": 449385.0866,
+                "coord_y_fin": 1120507.074,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.46117971128847,
+                        10.133926835794385
+                    ],
+                    [
+                        -84.46165133878688,
+                        10.133579354133682
+                    ],
+                    [
+                        -84.46187982956407,
+                        10.133158340323885
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 54,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "P0012",
+                "poste final": "P0015",
+                "longitud_m": 272.2519831285932,
+                "proyecto": null,
+                "fecha_registro": "2026-02-19T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449385.08664743614,
+                "coord_y_ini": 1120507.0736330876,
+                "coord_x_fin": 449272.2696065536,
+                "coord_y_fin": 1120296.4150363842,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.46187982912646,
+                        10.133158337007057
+                    ],
+                    [
+                        -84.46163083324352,
+                        10.132590252405505
+                    ],
+                    [
+                        -84.46213614861784,
+                        10.132006308556148
+                    ],
+                    [
+                        -84.46290657097643,
+                        10.131252220721747
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 55,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "P0015",
+                "poste final": "P0018",
+                "longitud_m": 283.057214778039,
+                "proyecto": null,
+                "fecha_registro": "2026-02-20T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449272.2696,
+                "coord_y_ini": 1120296.415,
+                "coord_x_fin": 449005.3740514828,
+                "coord_y_fin": 1120320.5563888797,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.46290657103576,
+                        10.131252220392694
+                    ],
+                    [
+                        -84.46356128323573,
+                        10.130994130128583
+                    ],
+                    [
+                        -84.46443423395594,
+                        10.131409381841532
+                    ],
+                    [
+                        -84.46534233659047,
+                        10.131467055926585
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 56,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "P0018",
+                "poste final": "P0065",
+                "longitud_m": 203.61636218874003,
+                "proyecto": null,
+                "fecha_registro": "2026-02-23T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449005.3741,
+                "coord_y_ini": 1120320.556,
+                "coord_x_fin": 448803.2619496944,
+                "coord_y_fin": 1120300.5930154314,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.46534233614268,
+                        10.131467052411162
+                    ],
+                    [
+                        -84.46611715320478,
+                        10.131428124991551
+                    ],
+                    [
+                        -84.46668672646271,
+                        10.131310269236044
+                    ],
+                    [
+                        -84.4671863708106,
+                        10.13128394136509
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 57,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "P0050",
+                "poste final": "P0010",
+                "longitud_m": 179.3206026127408,
+                "proyecto": null,
+                "fecha_registro": "2026-02-26T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449461.9307,
+                "coord_y_ini": 1120591.962,
+                "coord_x_fin": 449564.8978918693,
+                "coord_y_fin": 1120717.4166297768,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.46117971143786,
+                        10.133926839268284
+                    ],
+                    [
+                        -84.46117478693313,
+                        10.134157588092263
+                    ],
+                    [
+                        -84.46106399777904,
+                        10.134595536435336
+                    ],
+                    [
+                        -84.46024173452838,
+                        10.135062453698309
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 58,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "P0010",
+                "poste final": "P0022",
+                "longitud_m": 347.2609138180276,
+                "proyecto": null,
+                "fecha_registro": "2026-03-25T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449461.9307,
+                "coord_y_ini": 1120591.962,
+                "coord_x_fin": 449770.8139,
+                "coord_y_fin": 1120636.336,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.46117971143786,
+                        10.133926839268284
+                    ],
+                    [
+                        -84.4606128790995,
+                        10.134039296872784
+                    ],
+                    [
+                        -84.45984099224445,
+                        10.134174831836278
+                    ],
+                    [
+                        -84.45918389943112,
+                        10.134271862767692
+                    ],
+                    [
+                        -84.45871383364583,
+                        10.134262559045807
+                    ],
+                    [
+                        -84.45829776744402,
+                        10.134113265273582
+                    ],
+                    [
+                        -84.45836166359321,
+                        10.134331989849056
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 59,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "P0002",
+                "poste final": "P0004",
+                "longitud_m": 170.80646571967046,
+                "proyecto": null,
+                "fecha_registro": "2026-02-24T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449686.3332547933,
+                "coord_y_ini": 1120712.8406308421,
+                "coord_x_fin": 449807.9389475302,
+                "coord_y_fin": 1120598.6967327832,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45913355099972,
+                        10.135022629969962
+                    ],
+                    [
+                        -84.45892995995014,
+                        10.134660732763209
+                    ],
+                    [
+                        -84.45836166376094,
+                        10.134331992617179
+                    ],
+                    [
+                        -84.45802240686831,
+                        10.133992146866198
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 60,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "P0004",
+                "poste final": "P0070",
+                "longitud_m": 143.801779762039,
+                "proyecto": null,
+                "fecha_registro": "2026-02-11T06:00:00",
+                "responsable": "Leo",
+                "coord_x_ini": 449807.9389475302,
+                "coord_y_ini": 1120598.6967327832,
+                "coord_x_fin": 449877.6647,
+                "coord_y_fin": 1120473.256,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45802240686831,
+                        10.133992146866198
+                    ],
+                    [
+                        -84.4577119998186,
+                        10.133454999216848
+                    ],
+                    [
+                        -84.45754846563477,
+                        10.133097012261688
+                    ],
+                    [
+                        -84.45738453809055,
+                        10.132858860855093
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 61,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "A0220",
+                "poste final": "A0221",
+                "longitud_m": 38.76711467530108,
+                "proyecto": null,
+                "fecha_registro": "2026-03-05T14:54:11",
+                "responsable": "Olger",
+                "coord_x_ini": 456890.7035080932,
+                "coord_y_ini": 1126748.0168304811,
+                "coord_x_fin": 456852.9398093102,
+                "coord_y_fin": 1126739.25371263,
+                "observacion": "Plaza"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.39345850659768,
+                        10.18967530088054
+                    ],
+                    [
+                        -84.39380307296064,
+                        10.189595653792702
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 62,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "A0221",
+                "poste final": "A0222",
+                "longitud_m": 181.37266521165128,
+                "proyecto": null,
+                "fecha_registro": "2026-03-05T14:56:51",
+                "responsable": "Olger",
+                "coord_x_ini": 456852.9398093102,
+                "coord_y_ini": 1126739.25371263,
+                "coord_x_fin": 456890.7035080932,
+                "coord_y_fin": 1126748.0168304811,
+                "observacion": "Alameda"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.39380307296064,
+                        10.189595653792702
+                    ],
+                    [
+                        -84.39405060416254,
+                        10.189529340903727
+                    ],
+                    [
+                        -84.39422783064465,
+                        10.18975566984012
+                    ],
+                    [
+                        -84.39401398739263,
+                        10.189885410147074
+                    ],
+                    [
+                        -84.39354235962291,
+                        10.190028128157397
+                    ],
+                    [
+                        -84.39345850659768,
+                        10.18967530088054
                     ]
                 ],
                 "type": "LineString"
