@@ -460,59 +460,65 @@
 
         }
        /* Contenedor velocidad compacto */
-        .widget-velocidad {
-            margin: 2px 0;
-            padding: 4px 6px;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 4px;
+        /* Contenedor de velocidad más compacto */
+.widget-velocidad {
+    margin: 1px 0;         /* margen vertical muy pequeño */
+    padding: 2px 4px;      /* menos espacio interno */
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 3px;
 
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-            align-items: center; /* centrado horizontal */
-        }
+    display: flex;
+    flex-direction: column;
+    gap: 2px;              /* espacio mínimo entre elementos */
+    align-items: center;   /* centrado horizontal */
+}
 
-        /* Título */
-        .titulo-velocidad {
-            font-size: 14px;
-            font-weight: 600;
-            text-align: center;
-            letter-spacing: 0.2px;
-            margin-bottom: 2px;
-        }
+/* Título */
+.titulo-velocidad {
+    font-size: 12px;       /* más pequeño */
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-bottom: 1px;    /* reduce espacio con el slider */
+}
 
-        /* Input range */
-        .widget-velocidad input[type="range"] {
-            width: 90%;        /* ocupa casi todo el ancho del contenedor */
-            height: 6px;       /* más delgado y compacto */
-            border-radius: 3px;
-            background: #2f83d7;
-            accent-color: #024589; /* color del slider en navegadores modernos */
-        }
+/* Slider */
+.widget-velocidad input[type="range"] {
+    width: 90%;
+    height: 4px;           /* slider más delgado */
+    border-radius: 2px;
+    background: #2f83d7;
+    accent-color: #024589;
+}
 
-        /* Botones + y - compactos y elegantes */
-        .botones-velocidad {
-            display: flex;
-            gap: 4px;
-            width: 80%; /* ancho máximo conjunto */
-            justify-content: center;
-        }
+/* Botones + y - compactos */
+.botones-velocidad {
+    display: flex;
+    gap: 2px;              /* menos espacio entre botones */
+    width: 70%;             /* ancho del conjunto más reducido */
+    justify-content: center;
+}
 
-        .botones-velocidad button {
-            flex: 1;                  /* se reparten el espacio */
-            padding: 4px 0;           /* más compacto verticalmente */
-            font-size: 12px;          /* tamaño de fuente reducido */
-            border: none;
-            background: #024589;
-            color: white;
-            border-radius: 3px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
+.botones-velocidad button {
+    flex: 1;
+    padding: 2px 0;        /* menos alto */
+    font-size: 10px;       /* letra más pequeña */
+    border: none;
+    background: #024589;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
 
-        .botones-velocidad button:hover {
-            background: #2f83d7;
-        }
+.botones-velocidad button:hover {
+    background: #2f83d7;
+}
+
+.botones-velocidad button:active {
+    transform: translateY(1px);  
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
 
         .controles-animacion{
             display: flex;
@@ -622,7 +628,7 @@
         align-items:center;
         gap:3px;
     ">
-        📄 Descargar Reporte
+        📄 Reporte
     </button>
 
     <button id="btnDescargarDatos" style="
@@ -637,7 +643,7 @@
         align-items:center;
         gap:3px;
     ">
-        📥 Descargar Datos
+        📥 Datos
     </button>
 </div>
 </div>
