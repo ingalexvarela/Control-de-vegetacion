@@ -105,7 +105,73 @@
         }
 
         /* ================= RESPONSIVE REAL ================= */
+        /*CELULAR*/
+        @media (max-width: 768px) {
+            /* Ajuste del header */
+            #header {
+                height: 60px;
+                flex-wrap: wrap; /* que los logos y el título se acomoden */
+                padding: 0 5px;
+            }
+            #header h1 {
+                font-size: 0.9rem;
+                text-align: center;
+                flex-basis: 100%;
+            }
+            #logo-left, .logo-right img {
+                max-height: 30px;
+            }
 
+            /* PANEL DE ESTADISTICAS: ahora horizontal arriba del mapa */
+            #panel-stats {
+                position: fixed;
+                top: 60px; /* debajo del header */
+                left: 0;
+                width: 100%;
+                height: auto;
+                max-height: 40vh; /* ocupa 40% de la pantalla */
+                display: flex;
+                flex-wrap: wrap;
+                padding: 6px;
+                overflow-y: auto;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+                z-index: 900;
+            }
+
+            /* Ajuste de items y gráficos */
+            .stat-item {
+                flex: 1 1 45%; /* dos por fila */
+                margin: 2px;
+                font-size: 0.8rem;
+            }
+            .chart-container {
+                width: 100%;
+                max-width: 100%;
+                aspect-ratio: auto 1 / 0.5;
+                margin: 4px 0;
+            }
+
+            /* MAPA ocupa toda la pantalla restante */
+            #map {
+                position: fixed;
+                top: calc(60px + 40vh); /* header + panel stats */
+                left: 0;
+                width: 100%;
+                height: calc(100% - 60px - 40vh);
+            }
+
+            /* Controles de velocidad más compactos */
+            .widget-velocidad input[type="range"] {
+                width: 100%;
+            }
+            .botones-velocidad {
+                width: 100%;
+            }
+        }
+
+
+
+        /*==========================================================*/
         /*pANEL DE ESTADISTICAS*/
         #panel-stats {
             position: fixed;
