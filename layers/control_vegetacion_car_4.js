@@ -1039,6 +1039,302 @@ var json_control_vegetacion_car_4 = {
                 ],
                 "type": "LineString"
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 63,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "A2020",
+                "poste final": "A2020",
+                "longitud_m": 2336.779542971118,
+                "proyecto": null,
+                "fecha_registro": "2026-03-09T16:43:50",
+                "responsable": "Ronal",
+                "coord_x_ini": 446006.0686976033,
+                "coord_y_ini": 1133905.3522295665,
+                "coord_x_fin": 446831.20845849876,
+                "coord_y_fin": 1132827.2317315878,
+                "observacion": "1"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.4928999998281,
+                        10.25425299920515
+                    ],
+                    [
+                        -84.49405699991402,
+                        10.248784999217724
+                    ],
+                    [
+                        -84.49322236905745,
+                        10.245982915812268
+                    ],
+                    [
+                        -84.48710878777446,
+                        10.241429725556346
+                    ],
+                    [
+                        -84.48560016565634,
+                        10.241029030172419
+                    ],
+                    [
+                        -84.48535281491577,
+                        10.244516621327412
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 64,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "A3030",
+                "poste final": "A3030",
+                "longitud_m": 308.43958954211337,
+                "proyecto": null,
+                "fecha_registro": "2026-03-09T16:44:29",
+                "responsable": "Badilla",
+                "coord_x_ini": 447938.9380437813,
+                "coord_y_ini": 1133788.998688851,
+                "coord_x_fin": 448243.87697056384,
+                "coord_y_fin": 1133819.8924535972,
+                "observacion": "2"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.47525407451576,
+                        10.253227283957738
+                    ],
+                    [
+                        -84.47374796159879,
+                        10.253224068651587
+                    ],
+                    [
+                        -84.47247083324174,
+                        10.253510666104678
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 65,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "A4040",
+                "poste final": "A4040",
+                "longitud_m": 158.74202809046113,
+                "proyecto": null,
+                "fecha_registro": "2026-03-09T16:44:45",
+                "responsable": "Badilla",
+                "coord_x_ini": 449256.492470194,
+                "coord_y_ini": 1133115.6371224988,
+                "coord_x_fin": 449249.3434752671,
+                "coord_y_fin": 1133235.4149810015,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.46321783990457,
+                        10.247156501327277
+                    ],
+                    [
+                        -84.46333186714342,
+                        10.247484085820213
+                    ],
+                    [
+                        -84.46365346230913,
+                        10.247731366367782
+                    ],
+                    [
+                        -84.4633520984346,
+                        10.247906670528293
+                    ],
+                    [
+                        -84.46328467170376,
+                        10.24823937117266
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 66,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "A5050",
+                "poste final": "A5050",
+                "longitud_m": 196.40980107405966,
+                "proyecto": null,
+                "fecha_registro": "2026-03-09T16:45:07",
+                "responsable": "Soto",
+                "coord_x_ini": 448479.71249903867,
+                "coord_y_ini": 1132470.3119497702,
+                "coord_x_fin": 448427.43704818084,
+                "coord_y_fin": 1132280.9866022978,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.47029999999994,
+                        10.241311666778156
+                    ],
+                    [
+                        -84.4707746578116,
+                        10.239599206325588
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 67,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "A9090",
+                "poste final": "A9090",
+                "longitud_m": 700.7771300124805,
+                "proyecto": null,
+                "fecha_registro": "2026-03-09T17:02:44",
+                "responsable": "Soto",
+                "coord_x_ini": 449135.87929704064,
+                "coord_y_ini": 1127871.4576833828,
+                "coord_x_fin": 449525.99272946105,
+                "coord_y_fin": 1127490.6732695212,
+                "observacion": "d"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.46424999981996,
+                        10.199739999430022
+                    ],
+                    [
+                        -84.460747999817,
+                        10.199111999434308
+                    ],
+                    [
+                        -84.46068446580104,
+                        10.19630219466039
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 68,
+                "codigo_circ": 438.0,
+                "ruta": null,
+                "poste inicial": "A20202",
+                "poste final": "A20202",
+                "longitud_m": 1356.143904739619,
+                "proyecto": null,
+                "fecha_registro": "2026-03-09T16:06:42",
+                "responsable": "Leo",
+                "coord_x_ini": 455764.70967575663,
+                "coord_y_ini": 1134251.6356245966,
+                "coord_x_fin": 456954.12148074864,
+                "coord_y_fin": 1133616.8510308415,
+                "observacion": "DSA"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.40382094880097,
+                        10.257506832728858
+                    ],
+                    [
+                        -84.40040813867328,
+                        10.256388682765802
+                    ],
+                    [
+                        -84.39295599341104,
+                        10.251780739091217
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 69,
+                "codigo_circ": 82.0,
+                "ruta": null,
+                "poste inicial": "A6060",
+                "poste final": "A6060",
+                "longitud_m": 278.3086104906526,
+                "proyecto": null,
+                "fecha_registro": "2026-03-09T18:05:51",
+                "responsable": "Ronal",
+                "coord_x_ini": 459261.0781338956,
+                "coord_y_ini": 1132513.5516978365,
+                "coord_x_fin": 459287.9814629373,
+                "coord_y_fin": 1132790.5569208192,
+                "observacion": null
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.37188499975294,
+                        10.241829999196815
+                    ],
+                    [
+                        -84.37164233308631,
+                        10.244334832534305
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 70,
+                "codigo_circ": null,
+                "ruta": null,
+                "poste inicial": "A5050",
+                "poste final": "A5050",
+                "longitud_m": 7287.5922800806375,
+                "proyecto": null,
+                "fecha_registro": "2026-03-09T18:31:44",
+                "responsable": "Badilla",
+                "coord_x_ini": 451681.839736981,
+                "coord_y_ini": 1135918.4011064635,
+                "coord_x_fin": 454218.26286420925,
+                "coord_y_fin": 1129086.4497775713,
+                "observacion": "ds"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.44111333323193,
+                        10.272528332769369
+                    ],
+                    [
+                        -84.41787699978656,
+                        10.210787999208168
+                    ]
+                ],
+                "type": "LineString"
+            }
         }
     ]
 };

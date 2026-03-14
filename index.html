@@ -16,36 +16,42 @@
         html, body {
             background-color: #ffffff;
             width: 100%;
-            height: 100%;
+            height: 100vh;       /* 🔹 usar viewport real */
             padding: 0;
             margin: 0;
+            overflow-x: hidden;  /* 🔹 evita scroll horizontal */
+            font-family: Arial, sans-serif;
         }
 
         .ol-control > * {
-            background-color: #f8f8f8!important;
-            color: #444444!important;
+            background-color: #f8f8f8 !important;
+            color: #4104f7 !important;
             border-radius: 0px;
+            transition: background-color 0.3s ease; /* 🔹 efecto hover/focus suave */
         }
 
-        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
-            color: #444444!important;
+        .ol-attribution a, 
+        .gcd-gl-input::placeholder, 
+        .search-layer-input-search::placeholder {
+            color: #444444 !important;
         }
 
         .search-layer-input-search {
-            background-color: #f8f8f8!important;
+            background-color: #f8f8f8 !important;
         }
 
-        .ol-control > *:focus, .ol-control >*:hover {
-            background-color: rgba(248, 248, 248, 0.7)!important;
-        } 
+        .ol-control > *:focus, 
+        .ol-control > *:hover {
+            background-color: #e0e0e0 !important; /* 🔹 hover más visible */
+        }
 
         .ol-control {
-            background-color: rgba(255,255,255,.4) !important;
+            background-color: #ffffff !important;
             padding: 2px !important;
         }
-
+        
         #header {
-            position: absolute;
+            position: fixed; /* mejor que absolute para scroll de mapa */
             top: 0;
             left: 0;
             right: 0;
@@ -59,6 +65,7 @@
                 #bfcedb
             );
             display: flex;
+            flex-wrap: nowrap;      /* 🔹 nowrap y usamos flex-shrink para responsive */
             align-items: center;
             justify-content: space-between;
             padding: 0 10px;
@@ -67,118 +74,245 @@
         }
 
         #logo-left {
-            height: 50px;
+            max-height: 50px;
+            height: auto;
+            width: auto;
+            flex-shrink: 0;  /* 🔹 no se encoge demasiado */
         }
 
         #header h1 {
             color: rgb(0, 0, 0);
-            font-size: 22px;
-            margin: 0 20px;
-            font-family: Arial, sans-serif;
+            font-size: 1.4rem;   /* 🔹 usar rem para escala natural */
+            margin: 0 10px;
             flex: 1;
             text-align: center;
+            white-space: nowrap; /* 🔹 evita que el título baje */
+            overflow: hidden;
+            text-overflow: ellipsis; /* 🔹 si el título es muy largo */
+        }
+
+        .logo-right {
+            display: flex;
+            gap: 10px;  /* 🔹 separación entre logos */
+            align-items: center;
+            flex-shrink: 0;  /* 🔹 evita que se encojan */
         }
 
         .logo-right img {
-            height: 50px;
-            transition: transform 0.3s;
+            max-height: 50px;
+            height: auto;
+            width: auto;
         }
 
-        .logo-right img:first-child {
-            position: relative;
-            right: 350px;
+        /* ================= RESPONSIVE REAL ================= */
+
+        /* Tablet y móviles */
+        @media (max-width: 1100px) {
+            #header {
+                padding: 0 5px;
+            }
+
+            #header h1 {
+                font-size: 1.1rem; /* más pequeño en pantallas pequeñas */
+                margin: 0 5px;
+            }
+
+            #logo-left, .logo-right img {
+                max-height: 40px; /* reducir tamaño de logos */
+            }
+
+            .logo-right {
+                gap: 5px;
+            }
         }
 
-        .logo-right img:last-child {
-            position: relative;
-            right: 50px;
+        /* Celular muy pequeño */
+        @media (max-width: 768px) {
+            #header {
+                height: 60px;
+            }
+
+            #header h1 {
+                font-size: 1rem;
+            }
+
+            #logo-left, .logo-right img {
+                max-height: 30px;
+            }
         }
 
+        /*pANEL DE ESTADISTICAS*/
         #panel-stats {
-            position: absolute;
-            top: 70px;       
-            left: 0;         
-            width: 250px;   
-            bottom: 0;       
-            background: linear-gradient(180deg, #024589, #5fa2e4);
-            color: white;
-            padding: 15px;
-            box-shadow: 2px 0 6px rgba(0,0,0,0.3);
-            overflow-y: auto; 
-            z-index: 900;
-            font-family: Arial, sans-serif;
-        }
-
-        #panel-stats h2 {
-            margin-top: 0;
-            font-size: 18px;
-            text-align: center;
-            border-bottom: 1px solid rgba(255,255,255,0.5);
-            padding-bottom: 5px;
-        }
-
-        .stat-item {
-            margin: 10px 0;
-            font-size: 14px;
-            padding: 5px 10px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 5px;
-        }
-
-        #panel-right {
-            position: absolute;
+            position: fixed;
             top: 70px;
-            right: 0;
-            width: 230px;
-            bottom: 0;
-            background: linear-gradient(180deg, #5fa2e4, #a1ccf7);
-            color: white;
-            padding: 15px;
-            box-shadow: -2px 0 6px rgba(0,0,0,0.3);
+            left: 0;
+            width: 260px;
+            height: calc(100vh - 70px);
+            background: linear-gradient(180deg, #024589, #5fa2e4);
+            color: rgb(255, 255, 255);
+            padding: 12px;
+            box-shadow: 2px 0 6px rgba(0,0,0,0.3);
             overflow-y: auto;
             z-index: 900;
             font-family: Arial, sans-serif;
         }
 
+        /* laptop */
+        @media (max-width: 1400px) {
+            #panel-stats {
+                width: 220px;
+            }
+        }
+
+        /* tablet */
+        @media (max-width: 1100px) {
+            #panel-stats {
+                width: 190px;
+            }
+        }
+
+        /* celular → panel tipo overlay */
+        @media (max-width: 768px) {
+            #panel-stats {
+                width: 100%;
+                height: 50vh;
+                top: auto;
+                bottom: 0;
+                border-radius: 14px 14px 0 0;
+            }
+        }
+
+        /* TITULO PANEL */
+        #panel-stats h2 {
+            margin: 0 0 6px 0;
+            padding-bottom: 4px;
+
+            font-size: clamp(13px, 1.3vw, 16px);
+            font-weight: 600;
+            text-align: center;
+
+            border-bottom: 1px solid rgba(255,255,255,0.35);
+            line-height: 1.2;
+        }
+
+        /* ITEMS */
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin: clamp(3px, 0.6vw, 6px) 0;
+            padding: clamp(3px, 0.5vw, 6px) clamp(6px, 0.8vw, 10px);
+
+            font-size: clamp(11px, 1vw, 13px);
+            line-height: 1.2;
+
+            background: rgba(255,255,255,0.08);
+            border-left: 3px solid rgba(255,255,255,0.35);
+            border-radius: 4px;
+
+            transition: 0.2s;
+        }
+
+        /* CONTENEDOR DE GRAFICOS */
+        .chart-box{
+            margin: 6px 0;
+            padding: 6px;
+            background: #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+        }
+
+        /* CANVAS RESPONSIVO */
+        .chart-box canvas{
+            width: 100% !important;
+            height: auto !important;
+        }
+        
+        .chart-container{
+            aspect-ratio: 1 / 0.6;
+        }
+        
+        
+        /*___________________________________________________________*/
+        
+        /*MAPA*/
         #map {
-            position: absolute;
-            top: 70px;        
-            left: 280px;      
-            right: 0px;
-            bottom: 0px;
-            width: auto !important;
-            height: auto !important; 
-            overflow: hidden;     
+            position: fixed;   /* 🔥 CAMBIO CRÍTICO */
+            top: 70px;
+            left: 280px;
+            /*right: 0;*/
+            /*bottom: 0;*/
+            width: calc(100% - 280px);
+            height: calc(100% - 70px);
         }
 
-        #overlayCreditos {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.5);
-            display: none;
-            z-index: 4000;
+        /* laptop */
+        @media (max-width: 1400px) {
+            #map {
+                left: 220px;
+            }
         }
 
+        /* tablet */
+        @media (max-width: 1100px) {
+            #map {
+                left: 190px;
+            }
+        }
+
+        /* celular */
+        @media (max-width: 768px) {
+            #map {
+                left: 0;
+                bottom: 50vh;
+            }
+        }
+        /*___________________________________________________________*/
+       /*CREDITOS*/
         #ventanaCreditos {
             position: fixed;
-            top: 51%;              
-            right: 0px;            
-            width: 200px;
+            bottom: 70px;
+            right: 15px;
+            width: 260px;
+            max-height: 380px;
             background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            border-radius: 14px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.35);
             display: none;
+            flex-direction: column;
             z-index: 5000;
-            font-family: Arial, sans-serif;
-            transition: all 0.3s ease;
+            animation: bubbleIn 0.25s ease;
         }
 
-        #ventanaCreditos.activo {
-            transform: translate(-50%, -50%) scale(1);
+        /* animación burbuja */
+        @keyframes bubbleIn {
+            from {
+                transform: scale(0.7) translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
         }
+
+        /* contenido scroll interno */
+        .contenido-cred {
+            overflow-y: auto;
+            max-height: 300px;
+        }
+
+        /* celular */
+        @media (max-width: 768px) {
+            #ventanaCreditos {
+                width: 90%;
+                right: 5%;
+                bottom: 80px;
+            }
+        }
+
+        /*____________________________________________*/
 
         .header-cred {
             background: linear-gradient(90deg, #024589, #2f83d7);
@@ -244,7 +378,7 @@
         }
 
         .autor-cred {
-            font-size: 12px;
+            font-size: 10px;
             color: #444;
             margin-top: 0px;
         }
@@ -252,6 +386,172 @@
         .autor-cred strong {
             color: #024589;
         }
+        /*GRAFICOS*/
+        .chart-container{
+            width: 100%;
+            max-width: 240px;
+            aspect-ratio: 1 / 0.75;
+            margin: 4px auto;
+        }
+
+        .chart-container canvas{
+            width: 100% !important;
+            height: 100% !important;
+            background: white;
+            border-radius: 6px;
+        }
+
+        @media (max-width: 1024px){
+            .chart-container{
+                max-width: 220px;
+            }
+        }
+
+        /*---------------------------------------------*/
+        /*velocidad*/
+       .control-velocidad{
+            text-align: center;
+            margin-top: clamp(5px, 1vw, 10px);
+        }
+
+        
+
+        
+
+        .botones-velocidad button{
+            flex: 1;
+            height: 26px;
+
+            border: none;
+            border-radius: 6px;
+
+            background: linear-gradient(
+                180deg,
+                #2f83d7,
+                #024589
+            );
+
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+
+            cursor: pointer;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: all 0.15s ease;
+        }
+
+        
+        
+        @media (max-width: 768px){
+            .chart-container{
+                max-width: 100%;
+                aspect-ratio: 1 / 0.7;
+            }
+            .botones-velocidad{
+                flex-direction: column;
+            }
+            .botones-velocidad button{
+                width: 100%;
+            }
+
+        }
+       /* Contenedor velocidad compacto */
+        .widget-velocidad {
+            margin: 2px 0;
+            padding: 4px 6px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 4px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            align-items: center; /* centrado horizontal */
+        }
+
+        /* Título */
+        .titulo-velocidad {
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 0.2px;
+            margin-bottom: 2px;
+        }
+
+        /* Input range */
+        .widget-velocidad input[type="range"] {
+            width: 90%;        /* ocupa casi todo el ancho del contenedor */
+            height: 6px;       /* más delgado y compacto */
+            border-radius: 3px;
+            background: #2f83d7;
+            accent-color: #024589; /* color del slider en navegadores modernos */
+        }
+
+        /* Botones + y - compactos y elegantes */
+        .botones-velocidad {
+            display: flex;
+            gap: 4px;
+            width: 80%; /* ancho máximo conjunto */
+            justify-content: center;
+        }
+
+        .botones-velocidad button {
+            flex: 1;                  /* se reparten el espacio */
+            padding: 4px 0;           /* más compacto verticalmente */
+            font-size: 12px;          /* tamaño de fuente reducido */
+            border: none;
+            background: #024589;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .botones-velocidad button:hover {
+            background: #2f83d7;
+        }
+
+        .controles-animacion{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin: 6px 0;
+        }
+
+        /* Estilo general para botones de reporte y descarga */
+        #btnReporte, #btnDescargarDatos {
+            padding: 8px 16px;           /* tamaño más grande */
+            font-size: 14px;             /* más legible */
+            font-weight: 600;
+            color: white;
+            background: #024589;         /* color base elegante */
+            border: none;
+            border-radius: 6px;          /* bordes suaves */
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15); /* sombra sutil */
+            transition: all 0.15s ease;  /* transición suave para hover/active */
+        }
+
+        /* Hover: aclarar un poco */
+        #btnReporte:hover, #btnDescargarDatos:hover {
+            background: #2f83d7;
+        }
+
+        /* Presionado: efecto de hundimiento */
+        #btnReporte:active, #btnDescargarDatos:active {
+            transform: translateY(2px);   /* baja 2px */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* sombra más corta */
+        }
+
+        /* Opcional: un pequeño efecto “glow” al pasar el mouse */
+        #btnReporte:hover, #btnDescargarDatos:hover {
+            box-shadow: 0 4px 12px rgba(47,131,215,0.4);
+        }
+
     </style>
 
     <title>CAR Control de Vegetación</title>
@@ -270,30 +570,77 @@
     <div id="panel-stats">
         <h2>Estadísticas</h2>
 
-        <div style="margin-bottom:10px;">
+        <div class="controles-animacion">
             <button id="btnPlayAnimacion">▶ Play</button>
             <button id="btnPauseAnimacion">⏸ Pausa</button>
             <button id="btnResetAnimacion">🔄 Reiniciar</button>
         </div>
 
-        <div class="stat-item">
-            Velocidad simulación Rápido ⟵ ⟶ Lento
-            <input type="range" id="velocidadAnimacion" min="100" max="3000" step="100" value="3000">
-            <div style="display:flex; justify-content:space-between; margin-top:5px;">
+        <div class="widget-velocidad">
+            <div class="titulo-velocidad">
+                Velocidad
+            </div>
+
+            <input type="range" id="velocidadAnimacion" min="50" max="3000" step="100" value="1500">
+
+            <div class="botones-velocidad">
                 <button id="btnMasVelocidad">+</button>
-                <button id="btnMenosVelocidad">-</button>
+                <button id="btnMenosVelocidad">−</button>
             </div>
         </div>
 
         <div class="stat-item">Metros podados: <span id="stat-metros">0</span> m</div>
         <div class="stat-item">Fecha: <span id="stat-fecha">--</span></div>
-        <div class="stat-item">Acumulado control (m): <span id="stat-acumulado_m">0</span> m</div>
-        <div class="stat-item">Acumulado control (km): <span id="stat-acumulado">0</span> km</div>
-        <div class="stat-item">promedio m/día: <span id="stat-promedio">0</span> m</div>
-        <div class="stat-item"><canvas id="chart-acumulado" width="230" height="150"></canvas></div>
-        <div class="stat-item"><canvas id="chart-mensual" width="230" height="150"></canvas></div>
+        <div class="stat-item">Acumulado en (m): <span id="stat-acumulado_m">0</span> m</div>
+        <div class="stat-item">Acumulado en (km): <span id="stat-acumulado">0</span> km</div>
+        <div class="stat-item">promedio m/5días: <span id="stat-promedio">0</span> m</div>
+        
+        <div class="chart-box chart-container">
+            <canvas id="chart-acumulado" width="900" height="500"></canvas>
+        </div>
 
-    </div>
+        <div class="chart-box chart-container">
+            <canvas id="chart-mensual" width="900" height="500"></canvas>
+        </div>
+
+        <div id="charts-export" style="position:absolute; left:-9999px; top:-9999px;">
+            <canvas id="chart-acumulado-export" width="2400" height="1400"></canvas>
+            <canvas id="chart-mensual-export" width="2400" height="1400"></canvas>
+            <canvas id="chart-mes-diario-export" width="1400" height="700"></canvas>
+        </div>
+        
+     <div style="margin-top:10px; text-align:center; display:flex; justify-content:center; gap:6px;">
+    <button id="btnReporte" style="
+        background:#024589;
+        color:white;
+        border:none;
+        padding:4px 8px;
+        border-radius:4px;
+        cursor:pointer;
+        font-size:11px;
+        display:flex;
+        align-items:center;
+        gap:3px;
+    ">
+        📄 Descargar Reporte
+    </button>
+
+    <button id="btnDescargarDatos" style="
+        background:#024589;
+        color:white;
+        border:none;
+        padding:4px 8px;
+        border-radius:4px;
+        cursor:pointer;
+        font-size:11px;
+        display:flex;
+        align-items:center;
+        gap:3px;
+    ">
+        📥 Descargar Datos
+    </button>
+</div>
+</div>
 
     <div id="map">
         <div id="popup" class="ol-popup">
@@ -325,6 +672,9 @@
     <script src="./resources/Autolinker.min.js"></script>
     <script src="./resources/qgis2web.js"></script>        
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <script src="https://cdn.sheetjs.com/xlsx-0.21.1/package/dist/xlsx.full.min.js"></script>
 
     <div id="overlayCreditos"></div>
     <div id="ventanaCreditos">
@@ -378,17 +728,70 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const cerrar = document.getElementById("cerrarCreditos");
+            const btn = document.getElementById("btnCreditos");
             const ventana = document.getElementById("ventanaCreditos");
+            const cerrar = document.getElementById("cerrarCreditos");
+
+            btn.addEventListener("click", function() {
+                if (ventana.style.display === "flex") {
+                    ventana.style.display = "none";
+                } else {
+                    ventana.style.display = "flex";
+                }
+            });
 
             cerrar.addEventListener("click", function() {
                 ventana.style.display = "none";
             });
+
         });
     </script>
 
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Calcular valores iniciales
+            function inicializarEstadisticas() {
+                const source = lyr_control_vegetacion_car_4.getSource();
+                const features = source.getFeatures();
+                if(!features.length) return;
 
+                // Ordenar por fecha para obtener último registro
+                features.sort((a,b) => new Date(a.get('fecha_registro')) - new Date(b.get('fecha_registro')));
+
+                // Último registro
+                const ultimo = features[features.length - 1];
+                const longitudUltimo = parseFloat(ultimo.get('longitud_m')) || 0;
+                const fechaUltimo = new Date(ultimo.get('fecha_registro'));
+                const fechaFormateada = fechaUltimo.getFullYear() + '-' +
+                    String(fechaUltimo.getMonth()+1).padStart(2,'0') + '-' +
+                    String(fechaUltimo.getDate()).padStart(2,'0') + ' ' +
+                    String(fechaUltimo.getHours()).padStart(2,'0') + ':' +
+                    String(fechaUltimo.getMinutes()).padStart(2,'0') + ':' +
+                    String(fechaUltimo.getSeconds()).padStart(2,'0');
+
+                // Acumulado total
+                let acumulado = features.reduce((sum, f) => sum + (parseFloat(f.get('longitud_m'))||0), 0);
+
+                // Promedio últimos 5 días
+                const promedio = calcularPromedioUltimos5Dias(features);
+
+                // Actualizar panel
+                document.getElementById('stat-metros').textContent = longitudUltimo.toFixed(2);
+                document.getElementById('stat-fecha').textContent = fechaFormateada;
+                document.getElementById('stat-acumulado_m').textContent = acumulado.toFixed(2);
+                document.getElementById('stat-acumulado').textContent = (acumulado/1000).toFixed(2);
+                document.getElementById('stat-promedio').textContent = promedio.toFixed(2);
+            }
+
+            // Ejecutar al cargar
+            inicializarEstadisticas();
+
+            // Crear gráficos
+            crearGraficoGeneral();   
+            crearGraficoMensual();
+        });
+        </script>
     <script>
             function calcularDatosUltimaSemana(features) {
 
@@ -433,32 +836,49 @@
                     data: {
                         labels: labels,
                         datasets: [{
-                            label: 'Metros por día (Última semana)',
+                            label: 'Metros por día (Última semana)', // sigue en la leyenda
                             data: data,
-                            backgroundColor: 'rgba(255,255,255,0.6)'
+                            backgroundColor: '#2f83d7',
+                            borderColor: '#024589',
+                            borderWidth: 1
                         }]
                     },
                     options: {
-                        responsive: false,
+                        responsive: true,
+                        maintainAspectRatio: false,
                         plugins: {
                             legend: {
                                 labels: {
-                                    color: '#ffffff',
-                                    font: { size: 10 }
+                                    color: '#000000',
+                                    font: { size: 9 }
+                                }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        // Solo mostramos X y Y en el tooltip
+                                        return `${context.parsed.y.toFixed(2)}`;
+                                    }
                                 }
                             }
                         },
                         scales: {
                             x: {
                                 ticks: { 
-                                    color: '#ffffff',
+                                    color: '#000000',
                                     font: { size: 9 }
+                                },
+                                grid: {
+                                    color: 'rgba(0,0,0,0.1)'
                                 }
                             },
                             y: {
                                 ticks: { 
-                                    color: '#ffffff',
+                                    color: '#000000',
                                     font: { size: 9 }
+                                },
+                                grid: {
+                                    color: 'rgba(0,0,0,0.1)'
                                 }
                             }
                         }
@@ -504,42 +924,59 @@
             const ctx = document.getElementById('chart-mensual').getContext('2d');
             const { labels, data } = calcularAcumuladoMensual3Meses(features);
 
-            window.chartMensual = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        label: 'Acumulado mensual (Últimos 3 meses)',
-                        data: data,
-                        backgroundColor: 'rgba(255,255,255,0.6)'
-                    }]
-                },
-                options: {
-                    responsive: false,
-                    plugins: {
-                        legend: {
-                            labels: {
-                                color: '#ffffff',
-                                font: { size: 10 }
-                            }
-                        }
-                    },
-                    scales: {
-                        x: {
-                            ticks: { 
-                                color: '#ffffff',
-                                font: { size: 9 }
-                            }
-                        },
-                        y: {
-                            ticks: { 
-                                color: '#ffffff',
-                                font: { size: 9 }
-                            }
-                        }
+            window.chartMensual = new Chart(ctx, { 
+    type: 'bar',
+    data: {
+        labels: labels,
+        datasets: [{
+            label: 'Acumulado mensual (Últimos 3 meses)', // esto sigue en la legend
+            data: data,
+            backgroundColor: '#2f83d7',
+            borderColor: '#024589',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                labels: {
+                    color: '#000000',
+                    font: { size: 9 }
+                }
+            },
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        // Solo mostramos Y en el tooltip, ignorando el dataset label
+                        return `${context.parsed.y.toFixed(2)}`;
                     }
                 }
-            });
+            }
+        },
+        scales: {
+            x: {
+                ticks: { 
+                    color: '#000000',
+                    font: { size: 9 }
+                },
+                grid: {
+                    color: 'rgba(0,0,0,0.1)'
+                }
+            },
+            y: {
+                ticks: { 
+                    color: '#000000',
+                    font: { size: 9 }
+                },
+                grid: {
+                    color: 'rgba(0,0,0,0.1)'
+                }
+            }
+        }
+    }
+});
         }
 
         map.once('rendercomplete', function() {
@@ -574,6 +1011,34 @@
 
         }
     </script>
+
+
+    <script>
+        function calcularDatosUltimoMesPorDia(features) {
+            const hoy = new Date();
+            const hace30 = new Date();
+            hace30.setDate(hoy.getDate() - 30);
+            const acumulado = {};
+            features.forEach(f => {
+                const fecha = new Date(f.get("fecha_registro"));
+                const metros = Number(f.get("longitud_m")) || 0;
+                if (fecha >= hace30) {
+                    const fechaStr = fecha.toISOString().split("T")[0];
+                    if (!acumulado[fechaStr]) {
+                        acumulado[fechaStr] = 0;
+                    }
+                    acumulado[fechaStr] += metros;
+                }
+            });
+
+            const labels = Object.keys(acumulado).sort();
+            const data = labels.map(f => acumulado[f]);
+            return { labels, data };
+        }
+    </script>
+
+
+
     <script>
         document.getElementById("btnMasVelocidad").addEventListener("click", function () {
             let slider = document.getElementById("velocidadAnimacion");
@@ -670,5 +1135,522 @@
             setTimeout(mostrarSiguiente, velocidadAnimacion);
         }
     </script>
+
+    <img id="logoCAR" src="images/logo.png" style="display:none;">
+    <img id="logoLEMAL" src="images/portal2.png" style="display:none;">
+    
+    <script>
+    document.getElementById("btnReporte").addEventListener("click", generarReporte);
+    function generarReporte() {
+        const hoy = new Date();
+        const fechaReporte = hoy.toLocaleDateString("es-CR");
+        const { jsPDF } = window.jspdf;
+
+        const source = lyr_control_vegetacion_car_4.getSource();
+        const features = source.getFeatures();
+
+        if (!features.length) {
+            alert("No hay datos para generar el reporte.");
+            return;
+        }
+
+        // recalcular datos
+        const datosSemana = calcularDatosUltimaSemana(features);
+        const datosMes = calcularAcumuladoMensual3Meses(features);
+        const datosMesDiario = calcularDatosUltimoMesPorDia(features);
+
+        // destruir charts si existen
+        if (window.chartAcumuladoExport) window.chartAcumuladoExport.destroy();
+        if (window.chartMensualExport) window.chartMensualExport.destroy();
+
+        // crear chart acumulado export
+        const ctx1 = document.getElementById("chart-acumulado-export").getContext("2d");
+
+        window.chartAcumuladoExport = new Chart(ctx1, {
+            type: "bar",
+            data: {
+                labels: datosSemana.labels,
+                datasets: [{
+                    label: "Metros por día (Última semana)",
+                    data: datosSemana.data,
+                    backgroundColor: "#2f83d7",
+                    borderColor: "#024589",
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: false,
+                animation: false,
+
+                plugins: {
+                    title: {
+                        display: true,
+                        text: "Control de Vegetación por Día (Última semana)",
+                        color: "#000000",
+                        font: {
+                            size: 60,
+                            weight: "bold"
+                        },
+                        padding: {
+                            top: 10,
+                            bottom: 30
+                        }
+                    },
+                    subtitle: {
+                        display: true,
+                        text: "■ Metros podados por día",
+                        color: "#024589",
+                        font: {
+                            size: 40
+                        },
+                        padding: {
+                            bottom: 20
+                        }
+                    },
+                    legend: {
+                        display: false,
+                        position: 'top',
+                        align: 'center',
+                        labels: {
+                            color: "#000000",
+                            boxWidth: 20,
+                            padding: 20,
+                            font: {
+                                size: 50
+                            }
+                        }
+                    },
+
+
+                    datalabels: {
+                        color: "#ffffff",
+                        anchor: "center",
+                        align: "center",
+                        font: {
+                            size: 40,
+                            weight: "bold"
+                        },
+                        formatter: function(value) {
+                            return value.toFixed(0) + " m";
+                        }
+                    }
+                },
+
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: "Días de trabajo",
+                            color: "#000000",
+                            font: {
+                                size: 50,
+                                weight: "bold"
+                            }
+                        },
+                        ticks: {
+                            color: "#000000",
+                            font: {
+                                size: 50
+                            }        
+                        },
+                        grid: {
+                            display: false
+                        },
+
+                        border: {
+                            color: "#000000",
+                            width: 2
+                        } },
+                    y: {
+                        title: {
+                            display: true,
+                            text: "Metros x día",
+                            color: "#000000",
+                            font: {
+                                size: 50,
+                                weight: "bold"
+                            }
+                        },
+                        ticks: {
+                            color: "#000000",
+                            font: {
+                                size: 50
+                            }
+                        },
+                        grid: {
+                            color: "#d9d9d9",
+                            lineWidth: 2
+                        },
+
+                        border: {
+                            color: "#000000",
+                            width: 2
+                        }
+                    }
+                }
+            },
+
+            plugins: [ChartDataLabels]
+        });
+
+        // crear chart mensual export
+        const ctx2 = document.getElementById("chart-mensual-export").getContext("2d");
+
+        window.chartMensualExport = new Chart(ctx2, {
+            type: "bar",
+            data: {
+                labels: datosMes.labels,
+                datasets: [{
+                    label: "Acumulado mensual (Últimos 3 meses)",
+                    data: datosMes.data,
+                    backgroundColor: "#2f83d7",
+                    borderColor: "#024589",
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: false,
+                animation: false,
+
+                plugins: {
+                    title: {
+                        display: true,
+                        text: "Control de Vegetación Mensual (Últimos 3 meses)",
+                        color: "#000000",
+                        font: {
+                            size: 60,
+                            weight: "bold"
+                        },
+                        padding: {
+                            top: 10,
+                            bottom: 30
+                        }
+                    },
+
+                    subtitle: {
+                        display: true,
+                        text: "■ Metros podados por mes",
+                        color: "#024589",
+                        font: {
+                            size: 40
+                        },
+                        padding: {
+                            bottom: 20
+                        }
+                    },
+
+                    legend: {
+                        display: false
+                    },
+
+                    datalabels: {
+                        color: "#ffffff",
+                        anchor: "center",
+                        align: "center",
+                        font: {
+                            size: 40,
+                            weight: "bold"
+                        },
+                        formatter: function(value) {
+                            return value.toFixed(0) + " m";
+                        }
+                    }
+                },
+
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: "Mes",
+                            color: "#000000",
+                            font: {
+                                size: 50,
+                                weight: "bold"
+                            }
+                        },
+
+                        ticks: {
+                            color: "#000000",
+                            font: {
+                                size: 50
+                            }
+                        },
+
+                        grid: {
+                            display: false
+                        },
+
+                        border: {
+                            color: "#000000",
+                            width: 2
+                        }
+                    },
+
+                    y: {
+                        title: {
+                            display: true,
+                            text: "Metros podados (m)",
+                            color: "#000000",
+                            font: {
+                                size: 50,
+                                weight: "bold"
+                            }
+                        },
+
+                        ticks: {
+                            color: "#000000",
+                            font: {
+                                size: 50
+                            }
+                        },
+
+                        grid: {
+                            color: "#d9d9d9",
+                            lineWidth: 2
+                        },
+
+                        border: {
+                            color: "#000000",
+                            width: 2
+                        }
+                    }
+                }
+            },
+
+            plugins: [ChartDataLabels]
+        });
+
+        const ctx3 = document.getElementById("chart-mes-diario-export").getContext("2d");
+
+        window.chartMesDiarioExport = new Chart(ctx3, {
+            type: "bar",
+            data: {
+                labels: datosMesDiario.labels,
+                datasets: [{
+                    label: "Metros por día (Último mes)",
+                    data: datosMesDiario.data,
+                    backgroundColor: "#2f83d7",
+                    borderColor: "#024589",
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: false,
+                animation: false,
+
+                plugins: {
+                    title: {
+                        display: true,
+                        text: "Control de Vegetación por Día (Último mes)",
+                        color: "#000000",
+                        font: {
+                            size: 40,
+                            weight: "bold"
+                        }
+                    },
+
+                    subtitle: {
+                        display: true,
+                        text: "■ Metros podados por día trabajado",
+                        color: "#024589",
+                        font: {
+                            size: 40
+                        }
+                    },
+
+                    legend: {
+                        display: false
+                    },
+
+                    datalabels: {
+                        color: "#2f3e46",
+                        anchor: "center",
+                        align: "top",
+                        //rotation: -90,   // gira el texto
+                        font: {
+                            size: 12,
+                            weight: "bold"
+                        },
+                        formatter: function(value) {
+                            return value.toFixed(0) + " m";
+                        }
+                    }
+                },
+
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: "Fecha de trabajo",
+                            color: "#000000",
+                            font: {
+                                size: 50,
+                                weight: "bold"
+                            }
+                        },
+                        ticks: {
+                            color: "#000000",
+                            font: { size: 14 },
+                            minRotation: 90,
+                            maxRotation: 90,
+                            align: "center",
+                            callback: function(value) {
+                                const label = this.getLabelForValue(value);
+
+                                const partes = label.split("-");
+                                return partes[2] + "-" + partes[1]; // DD-MM
+                            }
+                        },
+                        grid: { display: false }
+                    },
+
+                    y: {
+                        ticks: {
+                            color: "#000000",
+                            font: { size: 14 }
+                        },
+                        grid: {
+                            color: "#d9d9d9",
+                            lineWidth: 2
+                        }
+                    }
+                }
+            },
+
+            plugins: [ChartDataLabels]
+        });
+        
+        
+        // esperar render
+        setTimeout(function () {
+
+            const img1 = document.getElementById("chart-acumulado-export").toDataURL("image/png");
+            const img2 = document.getElementById("chart-mensual-export").toDataURL("image/png");
+            const img3 = document.getElementById("chart-mes-diario-export").toDataURL("image/png");
+
+
+
+            const doc = new jsPDF({
+                orientation: "landscape",
+                unit: "mm",
+                format: "a4"
+            });
+
+            // ===== LOGO =====
+           // ===== LOGOS =====
+            const logoCAR = document.getElementById("logoCAR");
+            const logoLEMAL = document.getElementById("logoLEMAL");
+
+            doc.addImage(logoCAR, "PNG", 20, 15, 40, 20);
+            doc.addImage(logoLEMAL, "PNG", 235, 15, 40, 40);
+            // ===== PORTADA =====
+            
+            // titulo principal
+            doc.setFontSize(40);
+            doc.text("REPORTE CONTROL DE LA VEGETACIÓN", 148, 90, { align: "center" });
+
+            // subtitulo
+            doc.setFontSize(22);
+            doc.setFont("helvetica", "normal");
+            doc.text("TRABAJOS REALIZADOS POR LA CUADRILLA DE DERRAMA", 148, 110, { align: "center" });
+
+            // informacion del reporte
+            doc.setFontSize(18);
+
+            doc.text("Fecha del reporte: " + fechaReporte, 148, 150, { align: "center" });
+
+            doc.text("Elaborado por: Ing. Alex Varela Quirós", 148, 165, { align: "center" });
+
+            doc.text("Responsable: Ronal Enrrique Arieta Valenciano ", 148, 180, { align: "center" });
+
+            // titulo superior
+            doc.setFont("helvetica", "bold");
+            doc.setFontSize(12);
+            doc.text("Departamento de Ingeniería Eléctrica", 148, 200, { align: "center" });
+
+            // Página 2: Estadísticas
+            doc.addPage();
+            doc.setFontSize(20);
+            doc.text("Estadísticas de control", 20, 30);
+
+            // Tomamos los valores de los span
+            const metros = document.getElementById("stat-metros").textContent;
+            const fecha = document.getElementById("stat-fecha").textContent;
+            const acumulado_m = document.getElementById("stat-acumulado_m").textContent;
+            const acumulado_km = document.getElementById("stat-acumulado").textContent;
+            const promedio = document.getElementById("stat-promedio").textContent;
+
+            // Insertamos los datos en el PDF
+            let y = 50; // posición vertical inicial
+            const gap = 10; // separación entre líneas
+            doc.setFontSize(16);
+
+            doc.text(`Metros podados: ${metros} m`, 20, y); y += gap;
+            doc.text(`Fecha del último trabajo reportado: ${fecha}`, 20, y); y += gap;
+            doc.text(`Acumulado control (m): ${acumulado_m} m`, 20, y); y += gap;
+            doc.text(`Acumulado control (km): ${acumulado_km} km`, 20, y); y += gap;
+            doc.text(`Promedio m/día: ${promedio} m`, 20, y); y += gap;
+
+            doc.addPage();
+            doc.setFontSize(18);
+            doc.text("Reporte Control de Vegetación", 20, 20);
+
+            doc.setFontSize(16);
+            doc.text("Estadística Semanal", 20, 30);
+
+            doc.addImage(img1, "PNG", 20, 35, 250, 120);
+
+            doc.addPage();
+            doc.text("Estadística Mensual - Último Mes por Día", 20, 20);
+
+            doc.addImage(img3, "PNG", 20, 35, 250, 120);
+
+            doc.addPage();
+            
+            doc.text("Estadística Trimestral Mensual", 20, 20);
+
+            doc.addImage(img2, "PNG", 20, 35, 250, 120);
+            
+            doc.save("Reporte_Control_Vegetacion.pdf");
+        }, 10);
+    }
+</script>
+
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const btn = document.getElementById("btnDescargarDatos");
+            
+            btn.addEventListener("click", function() {
+                const source = lyr_control_vegetacion_car_4.getSource();
+                const features = source.getFeatures();
+
+                if (!features.length) {
+                    alert("No hay datos para descargar.");
+                    return;
+                }
+
+                // Preparar datos
+                const datos = features.map(f => ({
+                    Fecha: f.get('fecha_registro'),
+                    Metros_Podados: parseFloat(f.get('longitud_m')) || 0,
+                    Observacion: f.get('observacion') || '',
+                    Poste_Inicial: f.get('poste1') || '',
+                    Poste_Final: f.get('poste2') || ''
+                }));
+
+                // Crear workbook y hoja
+                const wb = XLSX.utils.book_new();
+                const ws = XLSX.utils.json_to_sheet(datos);
+
+                XLSX.utils.book_append_sheet(wb, ws, "Control Vegetación");
+
+                // Descargar archivo
+                XLSX.writeFile(wb, "control_vegetacion.xlsx");
+            });
+        });
+        </script>
+
 </body>
 </html>
