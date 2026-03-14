@@ -104,7 +104,7 @@
             width: auto;
         }
 
-        /* ================= RESPONSIVE REAL ================= */
+        
         /*pANEL DE ESTADISTICAS*/
         #panel-stats {
             position: fixed;
@@ -205,34 +205,6 @@
             animation: bubbleIn 0.25s ease;
         }
 
-        /* animación burbuja */
-        @keyframes bubbleIn {
-            from {
-                transform: scale(0.7) translateY(20px);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1) translateY(0);
-                opacity: 1;
-            }
-        }
-
-        /* contenido scroll interno */
-        .contenido-cred {
-            overflow-y: auto;
-            max-height: 300px;
-        }
-
-        /* celular */
-        @media (max-width: 768px) {
-            #ventanaCreditos {
-                width: 90%;
-                right: 5%;
-                bottom: 80px;
-            }
-        }
-
-        /*____________________________________________*/
 
         .header-cred {
             background: linear-gradient(90deg, #024589, #2f83d7);
@@ -306,6 +278,8 @@
         .autor-cred strong {
             color: #024589;
         }
+
+        /*=================================================================*/
         /*GRAFICOS*/
         .chart-container{
             width: 100%;
@@ -425,7 +399,7 @@
             gap: 6px;
             margin: 6px 0;
         }
-
+        /*===================================================================================================*/
         /* Estilo general para botones de reporte y descarga */
         #btnReporte, #btnDescargarDatos {
             padding: 8px 16px;           /* tamaño más grande */
@@ -455,6 +429,222 @@
         #btnReporte:hover, #btnDescargarDatos:hover {
             box-shadow: 0 4px 12px rgba(47,131,215,0.4);
         }
+
+
+        /* ================= RESPONSIVE REAL ================= */
+         /* Tablet y móviles */
+        /* ===== RESPONSIVE PARA CELULARES ===== */
+        /* ===== RESPONSIVE HEADER PARA CELULARES ===== */
+        /* ===== HEADER ESCALABLE PARA CELULARES ===== */
+        @media (max-width: 768px) {
+
+            #header {
+                height: 50px;            /* más pequeño que en escritorio */
+                padding: 0 6px;
+            }
+
+            /* Logo izquierdo */
+            #logo-left {
+                max-height: 30px;         /* reduce tamaño proporcionalmente */
+            }
+
+            /* Título central */
+            #header h1 {
+                font-size: clamp(0.8rem, 3vw, 1.4rem); /* mínimo 0.8rem, máximo 1.4rem, escala según ancho */
+                margin: 0 5px;
+                white-space: normal;        /* permite que baje si es muy largo */
+                overflow: visible;
+                text-overflow: clip;
+                text-align: center;
+            }
+
+            /* Logos derecho */
+            .logo-right img {
+                max-height: 30px;         /* reduce tamaño proporcional */
+            }
+
+            /* Mantener todo en la misma fila */
+            #header, .logo-right {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            /* Panel de estadísticas fijo a la derecha */
+    /* Panel de estadísticas fijo a la derecha */
+    /* Panel de estadísticas fijo a la derecha */
+/* Panel de estadísticas fijo a la izquierda */
+#panel-stats {
+    position: fixed;
+    top: 50px;              /* debajo del header */
+    left: 0;
+    width: 120px;           /* ancho fijo */
+    height: calc(100vh - 50px);
+    padding: 8px;
+    box-shadow: 2px 0 6px rgba(0,0,0,0.25);
+    overflow-y: auto;
+    z-index: 900;
+}
+
+/* Mapa ajustado al panel */
+#map {
+    position: fixed;
+    top: 50px;                                /* debajo del header */
+    left: 128px;                              /* justo después del panel */
+    width: calc(100% - 122px);                /* resto del ancho de pantalla */
+    height: calc(100vh - 50px);               /* altura completa menos header */
+}
+
+            /* Título del panel */
+            #panel-stats h2 {
+                font-size: clamp(12px, 3vw, 16px); /* ajusta proporcional al ancho */
+                margin-bottom: 4px;
+                padding-bottom: 3px;
+            }
+
+            /* Items */
+            .stat-item {
+                margin: clamp(2px, 1vw, 4px) 0;
+                padding: clamp(2px, 1vw, 6px) clamp(4px, 2vw, 8px);
+                font-size: clamp(10px, 2.5vw, 12px);
+            }
+
+            /* Gráficos */
+            .chart-box {
+                margin: 4px 0;
+                padding: 4px;
+                border-radius: 4px;
+                box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            }
+
+            .chart-container {
+                max-width: 220px;
+                aspect-ratio: 1 / 0.6;
+                margin: 4px auto;
+            }
+
+            .chart-box canvas {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+                /* Contenedor de gráficos */
+            .chart-container {
+                max-width: 200px;         /* más pequeño en móviles */
+                aspect-ratio: 1 / 0.75;
+                margin: 3px auto;
+            }
+
+            .chart-container canvas {
+                width: 100% !important;
+                height: 100% !important;
+                border-radius: 4px;
+            }
+
+            /* Contenedor de velocidad */
+            .control-velocidad {
+                margin-top: clamp(4px, 2vw, 8px);
+            }
+
+            .widget-velocidad {
+                margin: 2px 0;
+                padding: 1px 3px;
+                gap: 1px;
+            }
+
+            /* Título de velocidad */
+            .titulo-velocidad {
+                font-size: clamp(10px, 2.5vw, 12px);
+                margin-bottom: 1px;
+            }
+
+            /* Slider */
+            .widget-velocidad input[type="range"] {
+                width: 85%;
+                height: 3px;
+            }
+
+            /* Botones + y - */
+            .botones-velocidad {
+                width: 80%;
+                gap: 1px;
+            }
+
+            .botones-velocidad button {
+                font-size: clamp(8px, 2.5vw, 10px);
+                padding: 1px 0;
+            }
+
+            /* Controles de animación */
+            .controles-animacion {
+                gap: 4px;
+                margin: 4px 0;
+            }
+
+            #btnReporte, #btnDescargarDatos {
+                padding: 6px 12px;          /* más compactos */
+                font-size: clamp(10px, 3vw, 14px); /* escala proporcional al ancho */
+                border-radius: 4px;          /* bordes un poco más pequeños */
+                box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+            }
+
+            #btnReporte:hover, #btnDescargarDatos:hover {
+                box-shadow: 0 3px 8px rgba(47,131,215,0.35);
+            }
+
+            #btnReporte:active, #btnDescargarDatos:active {
+                transform: translateY(1px);   /* menor desplazamiento para móviles */
+                box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            }
+
+             #ventanaCreditos {
+                width: 90%;                  /* casi todo el ancho */
+                right: 5%;                   /* margen lateral */
+                bottom: 60px;                /* un poco más arriba del borde inferior */
+                max-height: 70%;             /* ocupa la mayoría de la pantalla pero no toda */
+                border-radius: 10px;         /* un poco más compacto */
+            }
+
+            .header-cred {
+                padding: 2px 10px;           /* menos padding */
+            }
+
+            .header-cred h3 {
+                font-size: clamp(12px, 3vw, 16px); /* escala proporcional */
+            }
+
+            #cerrarCreditos {
+                font-size: clamp(16px, 4vw, 20px); /* escala con pantalla */
+            }
+
+            .contenido-cred {
+                font-size: clamp(9px, 2.5vw, 11px); /* más legible en móvil */
+                padding: 2px 6px;
+                max-height: calc(70% - 40px);       /* deja espacio para header */
+                overflow-y: auto;                   /* scroll si es necesario */
+            }
+
+            .logo-cred {
+                height: 22px;             /* más pequeño en móvil */
+            }
+
+            .logo-central img {
+                max-width: 140px;         /* reduce tamaño proporcional */
+            }
+
+            .autor-cred {
+                font-size: clamp(8px, 2.5vw, 10px);
+            }
+            
+            
+
+           
+
+        }
+
+        /*==============================================================*/
+        /* ===== PANEL DE ESTADÍSTICAS ESCALABLE PARA CELULARES ===== */
+
 
     </style>
 
