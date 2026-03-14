@@ -241,7 +241,17 @@
             animation: bubbleIn 0.25s ease;
         }
 
-        
+        /* animación burbuja */
+        @keyframes bubbleIn {
+            from {
+                transform: scale(0.7) translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
 
         /* contenido scroll interno */
         .contenido-cred {
@@ -249,7 +259,14 @@
             max-height: 300px;
         }
 
-        
+        /* celular */
+        @media (max-width: 768px) {
+            #ventanaCreditos {
+                width: 90%;
+                right: 5%;
+                bottom: 80px;
+            }
+        }
 
         /*____________________________________________*/
 
@@ -349,10 +366,6 @@
             margin-top: clamp(5px, 1vw, 10px);
         }
 
-        
-
-        
-
         .botones-velocidad button{
             flex: 1;
             height: 26px;
@@ -379,66 +392,67 @@
             transition: all 0.15s ease;
         }
 
-
+        
+       /* Contenedor velocidad compacto */
         /* Contenedor de velocidad más compacto */
-.widget-velocidad {
-    margin: 1px 0;         /* margen vertical muy pequeño */
-    padding: 2px 4px;      /* menos espacio interno */
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 3px;
+        .widget-velocidad {
+            margin: 1px 0;         /* margen vertical muy pequeño */
+            padding: 2px 4px;      /* menos espacio interno */
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 3px;
 
-    display: flex;
-    flex-direction: column;
-    gap: 2px;              /* espacio mínimo entre elementos */
-    align-items: center;   /* centrado horizontal */
-}
+            display: flex;
+            flex-direction: column;
+            gap: 2px;              /* espacio mínimo entre elementos */
+            align-items: center;   /* centrado horizontal */
+        }
 
-/* Título */
-.titulo-velocidad {
-    font-size: 12px;       /* más pequeño */
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 0.2px;
-    margin-bottom: 1px;    /* reduce espacio con el slider */
-}
+        /* Título */
+        .titulo-velocidad {
+            font-size: 12px;       /* más pequeño */
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 0.2px;
+            margin-bottom: 1px;    /* reduce espacio con el slider */
+        }
 
-/* Slider */
-.widget-velocidad input[type="range"] {
-    width: 90%;
-    height: 4px;           /* slider más delgado */
-    border-radius: 2px;
-    background: #2f83d7;
-    accent-color: #024589;
-}
+        /* Slider */
+        .widget-velocidad input[type="range"] {
+            width: 90%;
+            height: 4px;           /* slider más delgado */
+            border-radius: 2px;
+            background: #2f83d7;
+            accent-color: #024589;
+        }
 
-/* Botones + y - compactos */
-.botones-velocidad {
-    display: flex;
-    gap: 2px;              /* menos espacio entre botones */
-    width: 70%;             /* ancho del conjunto más reducido */
-    justify-content: center;
-}
+        /* Botones + y - compactos */
+        .botones-velocidad {
+            display: flex;
+            gap: 2px;              /* menos espacio entre botones */
+            width: 70%;             /* ancho del conjunto más reducido */
+            justify-content: center;
+        }
 
-.botones-velocidad button {
-    flex: 1;
-    padding: 2px 0;        /* menos alto */
-    font-size: 10px;       /* letra más pequeña */
-    border: none;
-    background: #024589;
-    color: white;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: 0.2s;
-}
+        .botones-velocidad button {
+            flex: 1;
+            padding: 2px 0;        /* menos alto */
+            font-size: 10px;       /* letra más pequeña */
+            border: none;
+            background: #024589;
+            color: white;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
 
-.botones-velocidad button:hover {
-    background: #2f83d7;
-}
+        .botones-velocidad button:hover {
+            background: #2f83d7;
+        }
 
-.botones-velocidad button:active {
-    transform: translateY(1px);  
-    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-}
+        .botones-velocidad button:active {
+            transform: translateY(1px);  
+            box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+        }
 
         .controles-animacion{
             display: flex;
