@@ -401,35 +401,60 @@
         }
         /*===================================================================================================*/
         /* Estilo general para botones de reporte y descarga */
-        #btnReporte, #btnDescargarDatos {
-            padding: 8px 16px;           /* tamaño más grande */
-            font-size: 14px;             /* más legible */
-            font-weight: 600;
-            color: white;
-            background: #024589;         /* color base elegante */
-            border: none;
-            border-radius: 6px;          /* bordes suaves */
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.15); /* sombra sutil */
-            transition: all 0.15s ease;  /* transición suave para hover/active */
+        .grupo-botones-reporte {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            flex-wrap: wrap; /* 🔥 clave para responsive */
         }
 
-        /* Hover: aclarar un poco */
-        #btnReporte:hover, #btnDescargarDatos:hover {
+        #btnReporte,
+        #btnDescargarDatos {
+            background: #024589;
+            color: white;
+            border: none;
+
+            padding: 6px 12px;
+            border-radius: 6px;
+
+            cursor: pointer;
+            font-size: 13px;
+
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            transition: 0.2s;
+        }
+
+        #btnReporte:hover,
+        #btnDescargarDatos:hover {
             background: #2f83d7;
         }
 
-        /* Presionado: efecto de hundimiento */
-        #btnReporte:active, #btnDescargarDatos:active {
-            transform: translateY(2px);   /* baja 2px */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* sombra más corta */
+        #btnReporte:active,
+        #btnDescargarDatos:active {
+            transform: translateY(1px);
         }
 
-        /* Opcional: un pequeño efecto “glow” al pasar el mouse */
-        #btnReporte:hover, #btnDescargarDatos:hover {
-            box-shadow: 0 4px 12px rgba(47,131,215,0.4);
-        }
+        #btnCreditos {
+            position: fixed;        /* mejor que absolute */
+            bottom: 12px;
+            right: 12px;
+            z-index: 4500;
 
+            background: #024589;
+            color: white;
+            border: none;
+
+            padding: 6px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+
+            font-size: 13px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
 
         /* ================= RESPONSIVE REAL ================= */
          /* Tablet y móviles */
@@ -470,30 +495,27 @@
                 justify-content: space-between;
             }
 
-            /* Panel de estadísticas fijo a la derecha */
-    /* Panel de estadísticas fijo a la derecha */
-    /* Panel de estadísticas fijo a la derecha */
-/* Panel de estadísticas fijo a la izquierda */
-#panel-stats {
-    position: fixed;
-    top: 50px;              /* debajo del header */
-    left: 0;
-    width: 120px;           /* ancho fijo */
-    height: calc(100vh - 50px);
-    padding: 8px;
-    box-shadow: 2px 0 6px rgba(0,0,0,0.25);
-    overflow-y: auto;
-    z-index: 900;
-}
+            /* Panel de estadísticas fijo a la izquierda */
+            #panel-stats {
+                position: fixed;
+                top: 50px;              /* debajo del header */
+                left: 0;
+                width: 120px;           /* ancho fijo */
+                height: calc(100vh - 50px);
+                padding: 8px;
+                box-shadow: 2px 0 6px rgba(0,0,0,0.25);
+                overflow-y: auto;
+                z-index: 900;
+            }
 
-/* Mapa ajustado al panel */
-#map {
-    position: fixed;
-    top: 50px;                                /* debajo del header */
-    left: 128px;                              /* justo después del panel */
-    width: calc(100% - 122px);                /* resto del ancho de pantalla */
-    height: calc(100vh - 50px);               /* altura completa menos header */
-}
+            /* Mapa ajustado al panel */
+            #map {
+                position: fixed;
+                top: 50px;                                /* debajo del header */
+                left: 128px;                              /* justo después del panel */
+                width: calc(100% - 122px);                /* resto del ancho de pantalla */
+                height: calc(100vh - 50px);               /* altura completa menos header */
+            }
 
             /* Título del panel */
             #panel-stats h2 {
@@ -511,16 +533,10 @@
 
             /* Gráficos */
             .chart-box {
-                margin: 4px 0;
-                padding: 4px;
+                margin: 0px 0;
+                padding: 0px;
                 border-radius: 4px;
                 box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-            }
-
-            .chart-container {
-                max-width: 220px;
-                aspect-ratio: 1 / 0.6;
-                margin: 4px auto;
             }
 
             .chart-box canvas {
@@ -530,13 +546,13 @@
 
                 /* Contenedor de gráficos */
             .chart-container {
-                max-width: 200px;         /* más pequeño en móviles */
+                max-width: 180px;         /* más pequeño en móviles */
                 aspect-ratio: 1 / 0.75;
                 margin: 3px auto;
             }
 
             .chart-container canvas {
-                width: 100% !important;
+                width: 95% !important;
                 height: 100% !important;
                 border-radius: 4px;
             }
@@ -581,22 +597,6 @@
                 margin: 4px 0;
             }
 
-            #btnReporte, #btnDescargarDatos {
-                padding: 6px 12px;          /* más compactos */
-                font-size: clamp(10px, 3vw, 14px); /* escala proporcional al ancho */
-                border-radius: 4px;          /* bordes un poco más pequeños */
-                box-shadow: 0 3px 5px rgba(0,0,0,0.15);
-            }
-
-            #btnReporte:hover, #btnDescargarDatos:hover {
-                box-shadow: 0 3px 8px rgba(47,131,215,0.35);
-            }
-
-            #btnReporte:active, #btnDescargarDatos:active {
-                transform: translateY(1px);   /* menor desplazamiento para móviles */
-                box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-            }
-
              #ventanaCreditos {
                 width: 90%;                  /* casi todo el ancho */
                 right: 5%;                   /* margen lateral */
@@ -637,8 +637,125 @@
             }
             
             
+             #btnCreditos {
+                bottom: 10px;                 /* sube para no chocar con UI móvil */
+                right: 8px;
 
+                padding: 5px 10px;
+                font-size: clamp(10px, 3vw, 12px);
+
+                border-radius: 5px;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+            }
            
+             /* Contenedor general de controles */
+            .ol-control {
+                padding: 1px !important;
+                background: rgba(255,255,255,0.9) !important;
+                border-radius: 6px;
+            }
+
+            /* Botones de controles */
+            .ol-control > * {
+                padding: 4px !important;
+                font-size: 12px !important;
+                border-radius: 5px !important;
+            }
+
+            /* Hover más suave en móvil */
+            .ol-control > *:hover,
+            .ol-control > *:focus {
+                background-color: #dcdcdc !important;
+            }
+
+            /* Inputs de búsqueda */
+            .search-layer-input-search {
+                font-size: 12px !important;
+                padding: 4px !important;
+            }
+
+            /* Placeholder más legible en móvil */
+            .gcd-gl-input::placeholder,
+            .search-layer-input-search::placeholder {
+                font-size: 11px !important;
+            }
+
+            /* Attribution más pequeño */
+            .ol-attribution {
+                font-size: 10px !important;
+            }
+            .grupo-botones-reporte {
+                flex-direction: column; 
+                align-items: stretch;
+                gap: 4px;
+                margin-top: 6px;
+            }
+
+            #btnReporte,
+            #btnDescargarDatos {
+                font-size: clamp(11px, 3vw, 13px);
+                padding: 8px;
+                justify-content: center;
+                width: 100%;
+            }
+
+         /* BOTÓN CAPAS compacto real */
+            .layer-switcher button {
+                width: 19px !important;
+                height: 18px !important;
+                padding: 0 !important;
+                background-size: 12px 12px !important;
+                background-position: center !important;
+            }
+
+            /* PANEL CAPAS compacto real */
+           
+
+            .layer-switcher .panel {
+                width: auto !important;          /* 🔥 clave */
+                max-width: 42vw !important;
+                max-height: 55vh !important;
+                padding: 0px !important;
+                font-size: 8px !important;
+                border-radius: 6px;
+
+                overflow-y: auto;
+                overflow-x: hidden !important;   /* 🔥 elimina scroll lateral */
+            }
+
+            /* LISTA */
+            .layer-switcher ul {
+                padding-left: 0px !important;
+                margin: 0 !important;
+            }
+
+            /* ITEMS */
+            .layer-switcher li.layer {
+                margin: 0px 0 !important;
+            }
+
+            /* LABEL */
+            .layer-switcher label {
+                display: flex;
+                align-items: left;
+                gap: 2px;
+                font-size: 8px !important;
+                line-height: 1;
+            }
+
+            /* ICONOS */
+            .layer-switcher label img {
+                width: 12px !important;
+            }
+
+            /* CHECKBOX */
+            .layer-switcher input[type="checkbox"],
+            .layer-switcher input[type="radio"] {
+                transform: scale(0.75);
+                margin-right: 0px;
+            }   
+
+            
 
         }
 
@@ -703,37 +820,15 @@
             <canvas id="chart-mes-diario-export" width="1400" height="700"></canvas>
         </div>
         
-     <div style="margin-top:10px; text-align:center; display:flex; justify-content:center; gap:6px;">
-    <button id="btnReporte" style="
-        background:#024589;
-        color:white;
-        border:none;
-        padding:4px 8px;
-        border-radius:4px;
-        cursor:pointer;
-        font-size:11px;
-        display:flex;
-        align-items:center;
-        gap:3px;
-    ">
-        📄 Reporte
-    </button>
+        <div class="grupo-botones-reporte">
+        <button id="btnReporte">
+            📄 Reporte
+        </button>
 
-    <button id="btnDescargarDatos" style="
-        background:#024589;
-        color:white;
-        border:none;
-        padding:4px 8px;
-        border-radius:4px;
-        cursor:pointer;
-        font-size:11px;
-        display:flex;
-        align-items:center;
-        gap:3px;
-    ">
-        📥 Datos
-    </button>
-</div>
+        <button id="btnDescargarDatos">
+            📥 Datos
+        </button>
+        </div>
 </div>
 
     <div id="map">
@@ -803,21 +898,8 @@
         </div>
     </div>
 
-    <button id="btnCreditos" style="
-        position:absolute;
-        bottom:10px;
-        right:10px;
-        z-index:4500;
-        background:#024589;
-        color:white;
-        border:none;
-        padding:6px 14px;
-        border-radius:6px;
-        cursor:pointer;
-        font-size:13px;
-        box-shadow:0 4px 10px rgba(0,0,0,0.3);
-    ">
-        Créditos
+    <button id="btnCreditos">
+    Créditos
     </button>
 
     <script>
@@ -930,7 +1012,7 @@
                     data: {
                         labels: labels,
                         datasets: [{
-                            label: 'Metros por día (Última semana)', // sigue en la leyenda
+                            label: 'm/día Semanal', // sigue en la leyenda
                             data: data,
                             backgroundColor: '#2f83d7',
                             borderColor: '#024589',
@@ -1019,58 +1101,58 @@
             const { labels, data } = calcularAcumuladoMensual3Meses(features);
 
             window.chartMensual = new Chart(ctx, { 
-    type: 'bar',
-    data: {
-        labels: labels,
-        datasets: [{
-            label: 'Acumulado mensual (Últimos 3 meses)', // esto sigue en la legend
-            data: data,
-            backgroundColor: '#2f83d7',
-            borderColor: '#024589',
-            borderWidth: 1
-        }]
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-            legend: {
-                labels: {
-                    color: '#000000',
-                    font: { size: 9 }
-                }
-            },
-            tooltip: {
-                callbacks: {
-                    label: function(context) {
-                        // Solo mostramos Y en el tooltip, ignorando el dataset label
-                        return `${context.parsed.y.toFixed(2)}`;
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Acumulado/meses',
+                        data: data,
+                        backgroundColor: '#2f83d7',
+                        borderColor: '#024589',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: '#000000',
+                                font: { size: 9 }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    // Solo mostramos Y en el tooltip, ignorando el dataset label
+                                    return `${context.parsed.y.toFixed(2)}`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            ticks: { 
+                                color: '#000000',
+                                font: { size: 9 }
+                            },
+                            grid: {
+                                color: 'rgba(0,0,0,0.1)'
+                            }
+                        },
+                        y: {
+                            ticks: { 
+                                color: '#000000',
+                                font: { size: 9 }
+                            },
+                            grid: {
+                                color: 'rgba(0,0,0,0.1)'
+                            }
+                        }
                     }
                 }
-            }
-        },
-        scales: {
-            x: {
-                ticks: { 
-                    color: '#000000',
-                    font: { size: 9 }
-                },
-                grid: {
-                    color: 'rgba(0,0,0,0.1)'
-                }
-            },
-            y: {
-                ticks: { 
-                    color: '#000000',
-                    font: { size: 9 }
-                },
-                grid: {
-                    color: 'rgba(0,0,0,0.1)'
-                }
-            }
-        }
-    }
-});
+            });
         }
 
         map.once('rendercomplete', function() {
