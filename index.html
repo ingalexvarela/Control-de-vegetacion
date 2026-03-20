@@ -859,6 +859,22 @@
     <script src="styles/Red_MT_car_6_style.js"></script>
     <script src="./layers/layers.js" type="text/javascript"></script> 
     <script src="./resources/Autolinker.min.js"></script>
+
+
+    <script>
+        HTMLCanvasElement.prototype.getContext = (function(original) {
+            return function(type, attrs) {
+                if (type === '2d') {
+                    attrs = Object.assign({}, attrs, { willReadFrequently: true });
+                }
+                return original.call(this, type, attrs);
+            };
+        })(HTMLCanvasElement.prototype.getContext);
+        </script>
+
+
+
+
     <script src="./resources/qgis2web.js"></script>        
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -1312,6 +1328,7 @@
         }
     </script>
 
+
     <img id="logoCAR" src="images/logo.png" style="display:none;">
     <img id="logoLEMAL" src="images/portal2.png" style="display:none;">
     
@@ -1734,10 +1751,9 @@
             doc.setFontSize(18);
 
             doc.text("Fecha del reporte: " + fechaReporte, 148, 150, { align: "center" });
-
-            doc.text("Elaborado por: Ing. Alex Varela Quirós", 148, 165, { align: "center" });
-
-            doc.text("Responsable: Ronal Enrrique Arieta Valenciano ", 148, 180, { align: "center" });
+            doc.text("Elaborado por: Ing. Alex Varela Quirós", 148, 160, { align: "center" });
+            doc.text("Datos verificados por: Javier Soto Gonzales", 148, 170, { align: "center" });
+            doc.text("Datos levantados por: Cuadrilla de Derrama", 148, 180, { align: "center" });
 
             // titulo superior
             doc.setFont("helvetica", "bold");
@@ -1765,7 +1781,7 @@
             doc.text(`Fecha del último trabajo reportado: ${fecha}`, 20, y); y += gap;
             doc.text(`Acumulado control (m): ${acumulado_m} m`, 20, y); y += gap;
             doc.text(`Acumulado control (km): ${acumulado_km} km`, 20, y); y += gap;
-            doc.text(`Promedio m/día: ${promedio} m`, 20, y); y += gap;
+            doc.text(`Promedio m/5días: ${promedio} m`, 20, y); y += gap;
 
             doc.addPage();
             doc.setFontSize(18);
