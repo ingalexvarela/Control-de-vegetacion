@@ -4987,6 +4987,374 @@ var json_control_vegetacion_car_4 = {
                 ],
                 "type": "LineString"
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 172,
+                "codigo_circ": "NULL",
+                "ruta": "NULL",
+                "poste inicial": "B0158",
+                "poste final": "B0156",
+                "longitud_m": 426.8942703431361,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-03-31T15:38:47",
+                "responsable": "Olger",
+                "coord_x_ini": 457095.73142865347,
+                "coord_y_ini": 1128053.8729127015,
+                "coord_x_fin": 457028.83888291597,
+                "coord_y_fin": 1127903.0105388686,
+                "observacion": "Por donde vive Juan cooperativa "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.3916016664367,
+                        10.201484499205744
+                    ],
+                    [
+                        -84.39237649987138,
+                        10.199379501552622
+                    ],
+                    [
+                        -84.39254299977087,
+                        10.198979665872649
+                    ],
+                    [
+                        -84.39221053796803,
+                        10.200119738662277
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 173,
+                "codigo_circ": "NULL",
+                "ruta": "NULL",
+                "poste inicial": "B0118",
+                "poste final": "B0111",
+                "longitud_m": 966.163822215277,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-04-01T10:56:06",
+                "responsable": "Olger",
+                "coord_x_ini": 455569.94958865974,
+                "coord_y_ini": 1127646.2473211188,
+                "coord_x_fin": 456027.9192451239,
+                "coord_y_fin": 1127495.5071425114,
+                "observacion": "Parcela de Agustí y por pollera limpio y derramado"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.40552308949859,
+                        10.19778194623962
+                    ],
+                    [
+                        -84.40412261833858,
+                        10.196989370450904
+                    ],
+                    [
+                        -84.40257175609283,
+                        10.19705900631194
+                    ],
+                    [
+                        -84.40229978760769,
+                        10.197240669465966
+                    ],
+                    [
+                        -84.40257614998237,
+                        10.198297299002855
+                    ],
+                    [
+                        -84.40220705038374,
+                        10.198947438019363
+                    ],
+                    [
+                        -84.40171491716126,
+                        10.199029602813317
+                    ],
+                    [
+                        -84.40143223404037,
+                        10.197820151293357
+                    ],
+                    [
+                        -84.40112685725417,
+                        10.196369232048973
+                    ],
+                    [
+                        -84.40134146232397,
+                        10.19642418649649
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 175,
+                "codigo_circ": "NULL",
+                "ruta": "NULL",
+                "poste inicial": "B0262",
+                "poste final": "B0266",
+                "longitud_m": 129.65142297671764,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-04-06T14:51:10",
+                "responsable": "Olger",
+                "coord_x_ini": 454943.4543,
+                "coord_y_ini": 1128833.857,
+                "coord_x_fin": 454813.99285639776,
+                "coord_y_fin": 1128839.3868256647,
+                "observacion": "Laguna camino a la peña llegando donde pollo Solis "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.41125493415998,
+                        10.208512588945649
+                    ],
+                    [
+                        -84.4123185995607,
+                        10.208544500065477
+                    ],
+                    [
+                        -84.41243664050334,
+                        10.208561095708054
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 176,
+                "codigo_circ": "NULL",
+                "ruta": "NULL",
+                "poste inicial": "K0010",
+                "poste final": "K0337",
+                "longitud_m": 518.770020431664,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-04-06T16:21:14",
+                "responsable": "Olger",
+                "coord_x_ini": 458578.3232,
+                "coord_y_ini": 1126133.368,
+                "coord_x_fin": 458191.9537044783,
+                "coord_y_fin": 1125862.411464103,
+                "observacion": "El espino "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.37804929348283,
+                        10.184136090802353
+                    ],
+                    [
+                        -84.37829216266506,
+                        10.184291751285446
+                    ],
+                    [
+                        -84.37889144757972,
+                        10.183727440865585
+                    ],
+                    [
+                        -84.37944922333938,
+                        10.183487417287523
+                    ],
+                    [
+                        -84.38007445142142,
+                        10.183301015074093
+                    ],
+                    [
+                        -84.380240486805,
+                        10.182598817369751
+                    ],
+                    [
+                        -84.38060098520869,
+                        10.182340561246816
+                    ],
+                    [
+                        -84.38126653143003,
+                        10.18196545087106
+                    ],
+                    [
+                        -84.38157266316406,
+                        10.181682126709863
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 177,
+                "codigo_circ": "NULL",
+                "ruta": "NULL",
+                "poste inicial": "B0448",
+                "poste final": "B0318",
+                "longitud_m": 1172.7278198196354,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-04-07T12:52:42",
+                "responsable": "Olger",
+                "coord_x_ini": 452109.2681,
+                "coord_y_ini": 1128961.535,
+                "coord_x_fin": 451696.559,
+                "coord_y_fin": 1129598.456,
+                "observacion": "La peña "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.4371251217229,
+                        10.209633362959272
+                    ],
+                    [
+                        -84.43721147771504,
+                        10.210130005219796
+                    ],
+                    [
+                        -84.43720049219803,
+                        10.210141529765423
+                    ],
+                    [
+                        -84.43705695347093,
+                        10.210693623432524
+                    ],
+                    [
+                        -84.43702299971866,
+                        10.210997997331377
+                    ],
+                    [
+                        -84.43982813100294,
+                        10.211542657823747
+                    ],
+                    [
+                        -84.44072643146407,
+                        10.211571039207433
+                    ],
+                    [
+                        -84.44130306562731,
+                        10.212045737571708
+                    ],
+                    [
+                        -84.44250263967163,
+                        10.212225923330507
+                    ],
+                    [
+                        -84.44167999944247,
+                        10.214017000097309
+                    ],
+                    [
+                        -84.44090000013114,
+                        10.21538700033566
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 178,
+                "codigo_circ": "NULL",
+                "ruta": "NULL",
+                "poste inicial": "B0246",
+                "poste final": "B0244",
+                "longitud_m": 116.95222563278458,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-04-07T12:55:28",
+                "responsable": "Olger",
+                "coord_x_ini": 455830.1344123486,
+                "coord_y_ini": 1128846.776123083,
+                "coord_x_fin": 455947.03363802924,
+                "coord_y_fin": 1128843.5216009824,
+                "observacion": "Entrada a laguna"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.40316202264961,
+                        10.208639495803641
+                    ],
+                    [
+                        -84.40257029125542,
+                        10.20861787310972
+                    ],
+                    [
+                        -84.40209500205412,
+                        10.208611386367336
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 179,
+                "codigo_circ": "NULL",
+                "ruta": "NULL",
+                "poste inicial": "B0272",
+                "poste final": "B0271",
+                "longitud_m": 117.31414356075047,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-04-07T12:56:59",
+                "responsable": "Olger",
+                "coord_x_ini": 454602.40678209806,
+                "coord_y_ini": 1128804.61263601,
+                "coord_x_fin": 454718.60854416044,
+                "coord_y_fin": 1128820.7296696387,
+                "observacion": "Por donde pollo"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.4143674570815,
+                        10.208244238169504
+                    ],
+                    [
+                        -84.41330703031612,
+                        10.208391305409846
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 181,
+                "codigo_circ": "NULL",
+                "ruta": "NULL",
+                "poste inicial": "B0402",
+                "poste final": "B0397",
+                "longitud_m": 50.97997564690571,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-04-08T15:04:39",
+                "responsable": "Olger",
+                "coord_x_ini": 456176.4281631606,
+                "coord_y_ini": 1128665.9594233898,
+                "coord_x_fin": 456227.3801,
+                "coord_y_fin": 1128667.65,
+                "observacion": "Por donde cacao"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.39999922567256,
+                        10.207008526514532
+                    ],
+                    [
+                        -84.39953418925906,
+                        10.20702438150712
+                    ]
+                ],
+                "type": "LineString"
+            }
         }
     ]
 };
