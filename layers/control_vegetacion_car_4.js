@@ -6407,6 +6407,710 @@ var json_control_vegetacion_car_4 = {
                 ],
                 "type": "LineString"
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 200,
+                "codigo_circ": 79.0,
+                "ruta": "B",
+                "poste inicial": "B0003",
+                "poste final": "B0009",
+                "longitud_m": 102.83835384736605,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-18T09:03:51",
+                "responsable": "Olger",
+                "coord_x_ini": 456781.4036,
+                "coord_y_ini": 1127396.268,
+                "coord_x_fin": 456679.5751,
+                "coord_y_fin": 1127382.046,
+                "observacion": "Calle de los tira piedra"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.394463278581,
+                        10.195535287489966
+                    ],
+                    [
+                        -84.3949627346716,
+                        10.195456001086788
+                    ],
+                    [
+                        -84.39539251029433,
+                        10.195405575419946
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 201,
+                "codigo_circ": 74.0,
+                "ruta": "A",
+                "poste inicial": "A0416",
+                "poste final": "A0272",
+                "longitud_m": 157.78932279754795,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-18T12:52:18",
+                "responsable": "Olger",
+                "coord_x_ini": 456886.63724738435,
+                "coord_y_ini": 1127297.6075175784,
+                "coord_x_fin": 456993.5385,
+                "coord_y_fin": 1127184.117,
+                "observacion": "Apartamentos wuendoline gamboa "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.3935017147077,
+                        10.194644402964864
+                    ],
+                    [
+                        -84.39329958863723,
+                        10.194289778404837
+                    ],
+                    [
+                        -84.39289826586017,
+                        10.193925062716673
+                    ],
+                    [
+                        -84.39252477187537,
+                        10.193619447268471
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 202,
+                "codigo_circ": 79.0,
+                "ruta": "E",
+                "poste inicial": "E0126",
+                "poste final": "E0030",
+                "longitud_m": 214.29345543640997,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-18T15:16:46",
+                "responsable": "Olger",
+                "coord_x_ini": 453688.8058,
+                "coord_y_ini": 1133575.529,
+                "coord_x_fin": 453900.26654332574,
+                "coord_y_fin": 1133589.9342883045,
+                "observacion": "Lajas después de la panadería la hilda"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.42276327739556,
+                        10.25136972305224
+                    ],
+                    [
+                        -84.42203168288948,
+                        10.251326323285918
+                    ],
+                    [
+                        -84.42161366990639,
+                        10.251310938138499
+                    ],
+                    [
+                        -84.42085444794218,
+                        10.251490885477873
+                    ],
+                    [
+                        -84.42083311331177,
+                        10.25150247308901
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 204,
+                "codigo_circ": 76.0,
+                "ruta": "K",
+                "poste inicial": "K0339",
+                "poste final": "K0060",
+                "longitud_m": 133.3834276122499,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-19T12:20:28",
+                "responsable": "Olger",
+                "coord_x_ini": 456543.20289160986,
+                "coord_y_ini": 1124725.170368319,
+                "coord_x_fin": 456664.3994,
+                "coord_y_fin": 1124726.708,
+                "observacion": "Calle rojas al final "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.39660750343914,
+                        10.171381813079677
+                    ],
+                    [
+                        -84.39606565359163,
+                        10.17152911525898
+                    ],
+                    [
+                        -84.39549628121195,
+                        10.171480014320535
+                    ],
+                    [
+                        -84.39550144152852,
+                        10.171397053315118
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 205,
+                "codigo_circ": 74.0,
+                "ruta": "A",
+                "poste inicial": "A0354",
+                "poste final": "A0352",
+                "longitud_m": 98.96335705894292,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-21T08:35:25",
+                "responsable": "Olger",
+                "coord_x_ini": 457792.5809,
+                "coord_y_ini": 1126594.03,
+                "coord_x_fin": 457704.584400313,
+                "coord_y_fin": 1126549.6503234692,
+                "observacion": "Calle matadero camino a Palmira por dentro "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.38522553104995,
+                        10.188292823849244
+                    ],
+                    [
+                        -84.38564150058154,
+                        10.188129919875793
+                    ],
+                    [
+                        -84.38602817649623,
+                        10.187890615511948
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 206,
+                "codigo_circ": 79.0,
+                "ruta": "F",
+                "poste inicial": "F0242",
+                "poste final": "F0000",
+                "longitud_m": 669.881260777483,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-21T08:41:13",
+                "responsable": "Olger",
+                "coord_x_ini": 457248.6978,
+                "coord_y_ini": 1133303.569,
+                "coord_x_fin": 457664.38565569586,
+                "coord_y_fin": 1133487.5126529157,
+                "observacion": "La legua zaginal "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.39026345037423,
+                        10.248951435675183
+                    ],
+                    [
+                        -84.38960384237718,
+                        10.248790887001133
+                    ],
+                    [
+                        -84.38943310033646,
+                        10.249010762718472
+                    ],
+                    [
+                        -84.38950838342517,
+                        10.249269257641721
+                    ],
+                    [
+                        -84.39006093161855,
+                        10.249421564447369
+                    ],
+                    [
+                        -84.3902162079672,
+                        10.249633288164416
+                    ],
+                    [
+                        -84.39019251160656,
+                        10.249741978511711
+                    ],
+                    [
+                        -84.38998295038142,
+                        10.249908923586025
+                    ],
+                    [
+                        -84.3896621419452,
+                        10.249864810956087
+                    ],
+                    [
+                        -84.38945006123684,
+                        10.249909582755967
+                    ],
+                    [
+                        -84.3886686183326,
+                        10.250320864772927
+                    ],
+                    [
+                        -84.38813791055149,
+                        10.250465499482742
+                    ],
+                    [
+                        -84.38748351607993,
+                        10.250634432417577
+                    ],
+                    [
+                        -84.38665569580836,
+                        10.250626259498869
+                    ],
+                    [
+                        -84.38647083959138,
+                        10.250619098152885
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 207,
+                "codigo_circ": 79.0,
+                "ruta": "C",
+                "poste inicial": "C0242",
+                "poste final": "C0242",
+                "longitud_m": 75.61076337307453,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-20T08:46:18",
+                "responsable": "Olger",
+                "coord_x_ini": 454547.83286818303,
+                "coord_y_ini": 1129741.1222495756,
+                "coord_x_fin": 454501.05911737675,
+                "coord_y_fin": 1129682.3309184767,
+                "observacion": "Tapezco calle cementerio abajo "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.41487654663104,
+                        10.216711062507736
+                    ],
+                    [
+                        -84.41524271704807,
+                        10.216216640792307
+                    ],
+                    [
+                        -84.41530278861195,
+                        10.216178957056897
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 209,
+                "codigo_circ": 76.0,
+                "ruta": "K",
+                "poste inicial": "K0357",
+                "poste final": "K0356",
+                "longitud_m": 77.64238539171761,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-21T14:22:25",
+                "responsable": "Olger",
+                "coord_x_ini": 457786.9429509394,
+                "coord_y_ini": 1125744.2589858077,
+                "coord_x_fin": 457715.9960591236,
+                "coord_y_fin": 1125712.7172903714,
+                "observacion": "Tajo arriba"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.38526776626202,
+                        10.180609512563434
+                    ],
+                    [
+                        -84.3859149275216,
+                        10.180323563520444
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 210,
+                "codigo_circ": 76.0,
+                "ruta": "K",
+                "poste inicial": "K0025",
+                "poste final": "K0024",
+                "longitud_m": 88.55456751630844,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-25T08:15:12",
+                "responsable": "Olger",
+                "coord_x_ini": 457714.0838599435,
+                "coord_y_ini": 1125609.704256333,
+                "coord_x_fin": 457626.54977427993,
+                "coord_y_fin": 1125596.299209707,
+                "observacion": "Antes de llegar a el tajo y después del río seco árbol cae sobre la cometida de info "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.38593126013551,
+                        10.179392144821387
+                    ],
+                    [
+                        -84.38672999976515,
+                        10.179269999210138
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 211,
+                "codigo_circ": 76.0,
+                "ruta": "K",
+                "poste inicial": "K0200",
+                "poste final": "K0199",
+                "longitud_m": 65.5490939568339,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-25T10:16:16",
+                "responsable": "Olger",
+                "coord_x_ini": 457547.4304,
+                "coord_y_ini": 1123293.694,
+                "coord_x_fin": 457612.31324904884,
+                "coord_y_fin": 1123303.015996453,
+                "observacion": "Calle Solis al final último poste"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.38742699947582,
+                        10.158450000887884
+                    ],
+                    [
+                        -84.38683498182893,
+                        10.158534985446991
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 212,
+                "codigo_circ": 76.0,
+                "ruta": "K",
+                "poste inicial": "K0199",
+                "poste final": "K0198",
+                "longitud_m": 138.91671983202815,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-25T10:20:31",
+                "responsable": "Olger",
+                "coord_x_ini": 457612.31324904884,
+                "coord_y_ini": 1123303.015996453,
+                "coord_x_fin": 457731.4606892142,
+                "coord_y_fin": 1123374.4424799932,
+                "observacion": "Calle Solis poste final "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.38683498182893,
+                        10.158534985446991
+                    ],
+                    [
+                        -84.38574841949068,
+                        10.159182073864654
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 213,
+                "codigo_circ": 76.0,
+                "ruta": "L",
+                "poste inicial": "L0187",
+                "poste final": "L0070",
+                "longitud_m": 267.4581877659366,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-25T15:30:43",
+                "responsable": "Olger",
+                "coord_x_ini": 453964.4711129711,
+                "coord_y_ini": 1120904.6940528394,
+                "coord_x_fin": 454194.798,
+                "coord_y_fin": 1120832.025,
+                "observacion": "Calle la isla "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.42009674677597,
+                        10.13680950710501
+                    ],
+                    [
+                        -84.4198706256211,
+                        10.136515746879665
+                    ],
+                    [
+                        -84.41943947950627,
+                        10.136286840761477
+                    ],
+                    [
+                        -84.4191933646486,
+                        10.136012173370217
+                    ],
+                    [
+                        -84.41799408847533,
+                        10.136155147333966
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 214,
+                "codigo_circ": 76.0,
+                "ruta": "L",
+                "poste inicial": "L0070",
+                "poste final": "L0106",
+                "longitud_m": 216.81387911502264,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-26T11:44:40",
+                "responsable": "Olger",
+                "coord_x_ini": 454194.798,
+                "coord_y_ini": 1120832.025,
+                "coord_x_fin": 454242.2968,
+                "coord_y_fin": 1121032.139,
+                "observacion": "La isla camino a polleras"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.41799408847533,
+                        10.136155147333966
+                    ],
+                    [
+                        -84.41772122527395,
+                        10.136748674883446
+                    ],
+                    [
+                        -84.41788406280948,
+                        10.137108258569642
+                    ],
+                    [
+                        -84.41780944915082,
+                        10.137293384020582
+                    ],
+                    [
+                        -84.41756298982818,
+                        10.13796503804588
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 215,
+                "codigo_circ": 76.0,
+                "ruta": "L",
+                "poste inicial": "L0187",
+                "poste final": "L0073",
+                "longitud_m": 136.69219778366607,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-25T11:14:35",
+                "responsable": "Olger",
+                "coord_x_ini": 453963.97988284525,
+                "coord_y_ini": 1120905.9894506652,
+                "coord_x_fin": 454063.35469822615,
+                "coord_y_fin": 1120816.3813923288,
+                "observacion": "La isla Polleras"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.42010124466275,
+                        10.136821213766643
+                    ],
+                    [
+                        -84.41987062560783,
+                        10.136515746157492
+                    ],
+                    [
+                        -84.41942570206584,
+                        10.136284626117703
+                    ],
+                    [
+                        -84.4191933646694,
+                        10.136012176917454
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 216,
+                "codigo_circ": 76.0,
+                "ruta": "L",
+                "poste inicial": "L0168",
+                "poste final": "L0172",
+                "longitud_m": 280.88412928683204,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-26T15:38:46",
+                "responsable": "Olger",
+                "coord_x_ini": 455014.3518,
+                "coord_y_ini": 1120931.772,
+                "coord_x_fin": 454987.4128122811,
+                "coord_y_fin": 1120655.1583321493,
+                "observacion": "La isla adentro"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.41051655497417,
+                        10.137066443877213
+                    ],
+                    [
+                        -84.41071142699073,
+                        10.136547666478108
+                    ],
+                    [
+                        -84.41077239291968,
+                        10.13586835294365
+                    ],
+                    [
+                        -84.41078795875836,
+                        10.135150088910422
+                    ],
+                    [
+                        -84.41075919769038,
+                        10.13456511953896
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 217,
+                "codigo_circ": 76.0,
+                "ruta": "L",
+                "poste inicial": "L0106",
+                "poste final": "L0103",
+                "longitud_m": 298.1953620066473,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-26T15:34:30",
+                "responsable": "Olger",
+                "coord_x_ini": 454242.29677669174,
+                "coord_y_ini": 1121032.138802027,
+                "coord_x_fin": 454364.3081745728,
+                "coord_y_fin": 1121124.3534619557,
+                "observacion": "La isla camino a las polleras "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.41756299003856,
+                        10.137965036255627
+                    ],
+                    [
+                        -84.41688328160394,
+                        10.138194878771294
+                    ],
+                    [
+                        -84.41627102518542,
+                        10.138544749781293
+                    ],
+                    [
+                        -84.41608423536512,
+                        10.139236830166976
+                    ],
+                    [
+                        -84.41645066919546,
+                        10.138800212530038
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 218,
+                "codigo_circ": 76.0,
+                "ruta": "L",
+                "poste inicial": "L0187",
+                "poste final": "L0073",
+                "longitud_m": 151.59821416148716,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-25T11:22:09",
+                "responsable": "Olger",
+                "coord_x_ini": 453965.939,
+                "coord_y_ini": 1120905.249,
+                "coord_x_fin": 454048.71319453896,
+                "coord_y_fin": 1120824.3201650854,
+                "observacion": "La isla por las polleras "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.42008335837171,
+                        10.136814541809507
+                    ],
+                    [
+                        -84.41987062560783,
+                        10.136515746157492
+                    ],
+                    [
+                        -84.41942570206584,
+                        10.136284626117703
+                    ],
+                    [
+                        -84.4191933646694,
+                        10.136012176917454
+                    ],
+                    [
+                        -84.41932706606924,
+                        10.136083785191214
+                    ]
+                ],
+                "type": "LineString"
+            }
         }
     ]
 };
