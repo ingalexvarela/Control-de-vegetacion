@@ -7111,6 +7111,238 @@ var json_control_vegetacion_car_4 = {
                 ],
                 "type": "LineString"
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 220,
+                "codigo_circ": 76.0,
+                "ruta": "L",
+                "poste inicial": "L0082",
+                "poste final": "L0168",
+                "longitud_m": 327.5215396335097,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-28T10:48:56",
+                "responsable": "Olger",
+                "coord_x_ini": 455222.74159599125,
+                "coord_y_ini": 1121184.407060158,
+                "coord_x_fin": 455014.3518,
+                "coord_y_fin": 1120931.772,
+                "observacion": "La isla a dentro"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.4086178214174,
+                        10.139353027953383
+                    ],
+                    [
+                        -84.40960884615458,
+                        10.138191045797313
+                    ],
+                    [
+                        -84.41051655497417,
+                        10.137066443877213
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 221,
+                "codigo_circ": 76.0,
+                "ruta": "L",
+                "poste inicial": "L0076",
+                "poste final": "L0082",
+                "longitud_m": 439.2504249358686,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-29T10:25:11",
+                "responsable": "Olger",
+                "coord_x_ini": 454951.8202845974,
+                "coord_y_ini": 1121446.923808477,
+                "coord_x_fin": 455211.452099086,
+                "coord_y_fin": 1121179.5589852133,
+                "observacion": "La isla entrando "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.4110931140539,
+                        10.141723501479564
+                    ],
+                    [
+                        -84.4107957416777,
+                        10.141583761901348
+                    ],
+                    [
+                        -84.41030037732573,
+                        10.14150852259895
+                    ],
+                    [
+                        -84.4099188660994,
+                        10.141650160155137
+                    ],
+                    [
+                        -84.4086178214174,
+                        10.139353027953383
+                    ],
+                    [
+                        -84.40872078709413,
+                        10.139309065653865
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 222,
+                "codigo_circ": 76.0,
+                "ruta": "L",
+                "poste inicial": "L0079",
+                "poste final": "L0082",
+                "longitud_m": 171.09977121477914,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-28T10:26:07",
+                "responsable": "Olger",
+                "coord_x_ini": 455283.9089,
+                "coord_y_ini": 1121332.758,
+                "coord_x_fin": 455222.74159599125,
+                "coord_y_fin": 1121184.407060158,
+                "observacion": "La isla adentro "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.40806134241222,
+                        10.140695044806613
+                    ],
+                    [
+                        -84.40803021117559,
+                        10.140158746735306
+                    ],
+                    [
+                        -84.4081862453609,
+                        10.139796917277577
+                    ],
+                    [
+                        -84.4086178214174,
+                        10.139353027953383
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 223,
+                "codigo_circ": 76.0,
+                "ruta": "L",
+                "poste inicial": "L0076",
+                "poste final": "L0089",
+                "longitud_m": 341.2566976586618,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-29T10:43:27",
+                "responsable": "Olger",
+                "coord_x_ini": 454951.8203,
+                "coord_y_ini": 1121446.924,
+                "coord_x_fin": 454634.012419194,
+                "coord_y_fin": 1121373.0679757588,
+                "observacion": "La isla afuera"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.41109311391556,
+                        10.141723503211406
+                    ],
+                    [
+                        -84.41144204827016,
+                        10.141728608597933
+                    ],
+                    [
+                        -84.41211008258395,
+                        10.141414489979407
+                    ],
+                    [
+                        -84.41226444318336,
+                        10.141259992936511
+                    ],
+                    [
+                        -84.41247587899484,
+                        10.141317448786792
+                    ],
+                    [
+                        -84.4128870769604,
+                        10.14114123953383
+                    ],
+                    [
+                        -84.41398446889256,
+                        10.141091437435783
+                    ],
+                    [
+                        -84.41399240205791,
+                        10.141052087385233
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 224,
+                "codigo_circ": 76.0,
+                "ruta": "L",
+                "poste inicial": "L0089",
+                "poste final": "L0100",
+                "longitud_m": 336.33531350326143,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-29T11:55:56",
+                "responsable": "Olger",
+                "coord_x_ini": 454634.8873,
+                "coord_y_ini": 1121377.419,
+                "coord_x_fin": 454312.8595,
+                "coord_y_fin": 1121326.425,
+                "observacion": "Entrada a la isla segunda entrada "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.41398446889256,
+                        10.141091437435783
+                    ],
+                    [
+                        -84.41435026589556,
+                        10.141027594798551
+                    ],
+                    [
+                        -84.41481983526167,
+                        10.140905014539115
+                    ],
+                    [
+                        -84.41567336208193,
+                        10.140917783462204
+                    ],
+                    [
+                        -84.41661768976256,
+                        10.140788813995414
+                    ],
+                    [
+                        -84.4169316007076,
+                        10.140705819273064
+                    ],
+                    [
+                        -84.41692252019796,
+                        10.14062665562192
+                    ]
+                ],
+                "type": "LineString"
+            }
         }
     ]
 };
