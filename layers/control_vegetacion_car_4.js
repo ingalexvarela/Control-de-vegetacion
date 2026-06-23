@@ -5995,6 +5995,38 @@ var json_control_vegetacion_car_4 = {
         {
             "type": "Feature",
             "properties": {
+                "fid": 259,
+                "codigo_circ": 76.0,
+                "ruta": "L",
+                "poste inicial": "L0076",
+                "poste final": "L0077",
+                "longitud_m": 36.06659209374669,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-22T12:40:59",
+                "responsable": "Olger",
+                "coord_x_ini": 454984.3878,
+                "coord_y_ini": 1121431.427,
+                "coord_x_fin": 454951.8203,
+                "coord_y_fin": 1121446.924,
+                "observacion": "Cañuela entrada a la isla "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.41079574163966,
+                        10.141583758207549
+                    ],
+                    [
+                        -84.41109311391556,
+                        10.141723503211406
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "fid": 191,
                 "codigo_circ": 72.0,
                 "ruta": "L",
@@ -7339,6 +7371,1610 @@ var json_control_vegetacion_car_4 = {
                     [
                         -84.41692252019796,
                         10.14062665562192
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 260,
+                "codigo_circ": 438.0,
+                "ruta": "P",
+                "poste inicial": "P0002",
+                "poste final": "P0004",
+                "longitud_m": 170.8064531492094,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-22T16:18:55",
+                "responsable": "Olger",
+                "coord_x_ini": 449686.3332547933,
+                "coord_y_ini": 1120712.8406308421,
+                "coord_x_fin": 449807.9389475302,
+                "coord_y_fin": 1120598.6967327832,
+                "observacion": "Calle barranca por dentro "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45913355099972,
+                        10.135022629969962
+                    ],
+                    [
+                        -84.45892995995014,
+                        10.134660732763209
+                    ],
+                    [
+                        -84.45836166359321,
+                        10.134331989849056
+                    ],
+                    [
+                        -84.45802240730546,
+                        10.133992149281632
+                    ],
+                    [
+                        -84.45802240686831,
+                        10.133992146866198
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 225,
+                "codigo_circ": 79.0,
+                "ruta": "F",
+                "poste inicial": "F0350",
+                "poste final": "F0350",
+                "longitud_m": 1468.49872675595,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-05-27T20:42:46",
+                "responsable": "Olger",
+                "coord_x_ini": 457731.4779,
+                "coord_y_ini": 1133805.651,
+                "coord_x_fin": 457627.0256,
+                "coord_y_fin": 1133796.177,
+                "observacion": "La legua zajinal"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.38586186252216,
+                        10.253496278725148
+                    ],
+                    [
+                        -84.38632105503814,
+                        10.253516700482637
+                    ],
+                    [
+                        -84.38681527005627,
+                        10.25340948229977
+                    ],
+                    [
+                        -84.38773106023123,
+                        10.253988986170937
+                    ],
+                    [
+                        -84.38889417299703,
+                        10.249311618229653
+                    ],
+                    [
+                        -84.3886686183326,
+                        10.250320864772927
+                    ],
+                    [
+                        -84.38757685137298,
+                        10.250566352053587
+                    ],
+                    [
+                        -84.38657556855736,
+                        10.250595350871986
+                    ],
+                    [
+                        -84.38636976897114,
+                        10.250660477457112
+                    ],
+                    [
+                        -84.38629525222757,
+                        10.25094790018597
+                    ],
+                    [
+                        -84.38629567891027,
+                        10.251300115747787
+                    ],
+                    [
+                        -84.38641977835434,
+                        10.251429542016583
+                    ],
+                    [
+                        -84.3866070532195,
+                        10.251522007757643
+                    ],
+                    [
+                        -84.3866726949871,
+                        10.251633155794545
+                    ],
+                    [
+                        -84.38679489038074,
+                        10.252077914867044
+                    ],
+                    [
+                        -84.38684186102402,
+                        10.252226160450078
+                    ],
+                    [
+                        -84.38688883171328,
+                        10.252374406023376
+                    ],
+                    [
+                        -84.38702014961423,
+                        10.252624508422818
+                    ],
+                    [
+                        -84.38697415758845,
+                        10.253282650982559
+                    ],
+                    [
+                        -84.38681527014268,
+                        10.25340948586976
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 226,
+                "codigo_circ": 438.0,
+                "ruta": "O",
+                "poste inicial": "O0103",
+                "poste final": "O0098",
+                "longitud_m": 924.7394965308313,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-02T14:24:25",
+                "responsable": "Olger",
+                "coord_x_ini": 448381.4138,
+                "coord_y_ini": 1122487.28,
+                "coord_x_fin": 448207.8271,
+                "coord_y_fin": 1122925.807,
+                "observacion": "Villa blanca adentro "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.47106466453934,
+                        10.151049326381507
+                    ],
+                    [
+                        -84.47253081106,
+                        10.152661205085789
+                    ],
+                    [
+                        -84.47460553271479,
+                        10.153004342412434
+                    ],
+                    [
+                        -84.47485332440066,
+                        10.153095214175009
+                    ],
+                    [
+                        -84.47460553271479,
+                        10.153004342412434
+                    ],
+                    [
+                        -84.47395960774881,
+                        10.153945087267054
+                    ],
+                    [
+                        -84.47356030764985,
+                        10.154463921887775
+                    ],
+                    [
+                        -84.47364477581307,
+                        10.154102557490628
+                    ],
+                    [
+                        -84.47356030736307,
+                        10.154463920925897
+                    ],
+                    [
+                        -84.47265457706305,
+                        10.155011975969833
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 227,
+                "codigo_circ": 438.0,
+                "ruta": "O",
+                "poste inicial": "O0190",
+                "poste final": "O0100",
+                "longitud_m": 321.4622255047958,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-02T14:25:29",
+                "responsable": "Olger",
+                "coord_x_ini": 448181.3483,
+                "coord_y_ini": 1123148.891,
+                "coord_x_fin": 448108.4892312693,
+                "coord_y_fin": 1122865.335893569,
+                "observacion": "Villa blanca a dentro "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.47289917940381,
+                        10.157028633980367
+                    ],
+                    [
+                        -84.47264139438694,
+                        10.156936692068447
+                    ],
+                    [
+                        -84.47356030736307,
+                        10.154463920925897
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 228,
+                "codigo_circ": 438.0,
+                "ruta": "O",
+                "poste inicial": "O0094",
+                "poste final": "O0032",
+                "longitud_m": 129.7700663312139,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-02T15:52:07",
+                "responsable": "Olger",
+                "coord_x_ini": 448759.3976,
+                "coord_y_ini": 1123047.154,
+                "coord_x_fin": 448633.1237,
+                "coord_y_fin": 1123073.965,
+                "observacion": "Villa blanca lecheria "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.46762266332038,
+                        10.156116346530261
+                    ],
+                    [
+                        -84.46837990303277,
+                        10.156215825387333
+                    ],
+                    [
+                        -84.4687753675666,
+                        10.156357112282196
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 229,
+                "codigo_circ": 438.0,
+                "ruta": "O",
+                "poste inicial": "O0094",
+                "poste final": "O0093",
+                "longitud_m": 77.83014999963395,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-02T15:53:11",
+                "responsable": "Olger",
+                "coord_x_ini": 448753.6025727968,
+                "coord_y_ini": 1123049.6572795224,
+                "coord_x_fin": 448825.0007,
+                "coord_y_fin": 1123018.676,
+                "observacion": "Villa blanca lecheria "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.46767558050568,
+                        10.156138904452659
+                    ],
+                    [
+                        -84.46702360847495,
+                        10.155859716547292
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 230,
+                "codigo_circ": 438.0,
+                "ruta": "O",
+                "poste inicial": "O0077",
+                "poste final": "O0073",
+                "longitud_m": 207.29098467265095,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-02T15:54:48",
+                "responsable": "Olger",
+                "coord_x_ini": 450086.6632,
+                "coord_y_ini": 1123005.244,
+                "coord_x_fin": 450286.3802447562,
+                "coord_y_fin": 1123045.7861666721,
+                "observacion": "Villa blanca lácteos "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45550974557507,
+                        10.155754464741031
+                    ],
+                    [
+                        -84.45433884510925,
+                        10.155986395466057
+                    ],
+                    [
+                        -84.45434385897995,
+                        10.155964958849216
+                    ],
+                    [
+                        -84.45368768147222,
+                        10.156123552636892
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 231,
+                "codigo_circ": 438.0,
+                "ruta": "P",
+                "poste inicial": "P0037",
+                "poste final": "P0033",
+                "longitud_m": 235.73092270581833,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-03T11:42:24",
+                "responsable": "Olger",
+                "coord_x_ini": 449706.66720576474,
+                "coord_y_ini": 1121800.0619710172,
+                "coord_x_fin": 449862.525988415,
+                "coord_y_fin": 1121764.5087896402,
+                "observacion": "Volio adentro  bambú "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45896199081598,
+                        10.144852992727758
+                    ],
+                    [
+                        -84.45901710880743,
+                        10.144677702915807
+                    ],
+                    [
+                        -84.45925731660098,
+                        10.144667610406055
+                    ],
+                    [
+                        -84.45901710846825,
+                        10.144677700553759
+                    ],
+                    [
+                        -84.45753924500431,
+                        10.144533524174843
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 232,
+                "codigo_circ": 438.0,
+                "ruta": "P",
+                "poste inicial": "P0007",
+                "poste final": "P0060",
+                "longitud_m": 474.0517089314626,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-03T13:01:54",
+                "responsable": "Olger",
+                "coord_x_ini": 449680.69866346853,
+                "coord_y_ini": 1120629.8128404198,
+                "coord_x_fin": 449639.9775,
+                "coord_y_fin": 1120379.663,
+                "observacion": "Volio "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45918389943112,
+                        10.134271862767692
+                    ],
+                    [
+                        -84.45984099185793,
+                        10.134174834152667
+                    ],
+                    [
+                        -84.45918389909983,
+                        10.134271864211001
+                    ],
+                    [
+                        -84.4595559289147,
+                        10.13404838047369
+                    ],
+                    [
+                        -84.45988401720562,
+                        10.133702336830092
+                    ],
+                    [
+                        -84.46027655220406,
+                        10.13328708931198
+                    ],
+                    [
+                        -84.46017054405202,
+                        10.132897476222677
+                    ],
+                    [
+                        -84.4598950023816,
+                        10.132357102047955
+                    ],
+                    [
+                        -84.45955226697976,
+                        10.132009614713844
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 233,
+                "codigo_circ": 438.0,
+                "ruta": "P",
+                "poste inicial": "P0077",
+                "poste final": "P0057",
+                "longitud_m": 182.031019234387,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-03T13:09:28",
+                "responsable": "Olger",
+                "coord_x_ini": 449680.69866346853,
+                "coord_y_ini": 1120629.8128404198,
+                "coord_x_fin": 449555.05252462055,
+                "coord_y_fin": 1120503.5703150332,
+                "observacion": "Volio "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45918389943112,
+                        10.134271862767692
+                    ],
+                    [
+                        -84.4595559285748,
+                        10.134048378433
+                    ],
+                    [
+                        -84.4598840172691,
+                        10.133702338302996
+                    ],
+                    [
+                        -84.46028960237395,
+                        10.133283738364353
+                    ],
+                    [
+                        -84.46032881703752,
+                        10.133128837701317
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 234,
+                "codigo_circ": 79.0,
+                "ruta": "E",
+                "poste inicial": "E0030",
+                "poste final": "E0061",
+                "longitud_m": 570.524591213182,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-05T03:28:36",
+                "responsable": "Diego",
+                "coord_x_ini": 453900.26654332574,
+                "coord_y_ini": 1133589.9342883045,
+                "coord_x_fin": 454326.3776,
+                "coord_y_fin": 1133832.768,
+                "observacion": "NULL"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.42083311331177,
+                        10.25150247308901
+                    ],
+                    [
+                        -84.41894910272858,
+                        10.251224319579968
+                    ],
+                    [
+                        -84.41825956131868,
+                        10.25171691646471
+                    ],
+                    [
+                        -84.41788298184001,
+                        10.252634980849683
+                    ],
+                    [
+                        -84.41717087915555,
+                        10.25325773944261
+                    ],
+                    [
+                        -84.41694619325986,
+                        10.25370306246108
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 235,
+                "codigo_circ": 79.0,
+                "ruta": "B",
+                "poste inicial": "B0403",
+                "poste final": "B0374",
+                "longitud_m": 161.24615317908686,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-04T21:35:26",
+                "responsable": "Olger",
+                "coord_x_ini": 456124.9167,
+                "coord_y_ini": 1128666.023,
+                "coord_x_fin": 456286.1332,
+                "coord_y_fin": 1128667.887,
+                "observacion": "Laguna 100metros norte de la panadería la zarcereña"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.40046938882962,
+                        10.2070085248156
+                    ],
+                    [
+                        -84.39999922567256,
+                        10.207008526514532
+                    ],
+                    [
+                        -84.39953418924266,
+                        10.207024382855185
+                    ],
+                    [
+                        -84.39905963238249,
+                        10.207025824581029
+                    ],
+                    [
+                        -84.39899793254548,
+                        10.207027180337787
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 236,
+                "codigo_circ": 76.0,
+                "ruta": "N",
+                "poste inicial": "N0043",
+                "poste final": "N0041",
+                "longitud_m": 127.46047169982029,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-05T21:50:47",
+                "responsable": "Olger",
+                "coord_x_ini": 453398.7845,
+                "coord_y_ini": 1124105.06,
+                "coord_x_fin": 453507.4016036125,
+                "coord_y_fin": 1124039.7661853114,
+                "observacion": "Barranca "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.42529702392672,
+                        10.165739062994945
+                    ],
+                    [
+                        -84.42481444636485,
+                        10.165523942282674
+                    ],
+                    [
+                        -84.42430499082336,
+                        10.16514999273611
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 237,
+                "codigo_circ": 438.0,
+                "ruta": "P",
+                "poste inicial": "P0033",
+                "poste final": "P0030",
+                "longitud_m": 280.65923115324597,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-05T21:53:47",
+                "responsable": "Olger",
+                "coord_x_ini": 449862.526,
+                "coord_y_ini": 1121764.509,
+                "coord_x_fin": 449762.6598,
+                "coord_y_fin": 1121513.653,
+                "observacion": "NULL"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.45753924490128,
+                        10.144533526076957
+                    ],
+                    [
+                        -84.45774723007604,
+                        10.14366556769331
+                    ],
+                    [
+                        -84.45789662733134,
+                        10.143060013720463
+                    ],
+                    [
+                        -84.45793638119547,
+                        10.142724444421578
+                    ],
+                    [
+                        -84.45844734725584,
+                        10.142264142469857
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 238,
+                "codigo_circ": 79.0,
+                "ruta": "F",
+                "poste inicial": "F0000",
+                "poste final": "F0000",
+                "longitud_m": 248.88832111227558,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-08T22:01:57",
+                "responsable": "Olger",
+                "coord_x_ini": 457440.3810218411,
+                "coord_y_ini": 1132088.741483217,
+                "coord_x_fin": 457439.16995661444,
+                "coord_y_fin": 1132092.1519289007,
+                "observacion": "Derrama de info "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.38850028916295,
+                        10.23796964645336
+                    ],
+                    [
+                        -84.38794787317232,
+                        10.237967038686916
+                    ],
+                    [
+                        -84.38851231591457,
+                        10.237976181125726
+                    ],
+                    [
+                        -84.38850571857205,
+                        10.237988093631744
+                    ],
+                    [
+                        -84.3879380939251,
+                        10.237981871461479
+                    ],
+                    [
+                        -84.38851138156835,
+                        10.238000468873146
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 239,
+                "codigo_circ": 79.0,
+                "ruta": "H",
+                "poste inicial": "H0526",
+                "poste final": "H0530",
+                "longitud_m": 79.30240324562519,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-11T09:16:59",
+                "responsable": "Olger",
+                "coord_x_ini": 458325.8665,
+                "coord_y_ini": 1128467.535,
+                "coord_x_fin": 458405.16201038193,
+                "coord_y_fin": 1128468.5805590856,
+                "observacion": "Palmira calle rojas "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.38037842449249,
+                        10.20523791600216
+                    ],
+                    [
+                        -84.37965468116931,
+                        10.20524821199415
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 240,
+                "codigo_circ": 79.0,
+                "ruta": "H",
+                "poste inicial": "H0322",
+                "poste final": "H0318",
+                "longitud_m": 148.67174701250207,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-11T09:46:51",
+                "responsable": "Olger",
+                "coord_x_ini": 460552.202,
+                "coord_y_ini": 1128751.204,
+                "coord_x_fin": 460568.0935584545,
+                "coord_y_fin": 1128611.5243858472,
+                "observacion": "Postes sin anclas, pueblo nuevo barrio segura al fondo "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.36006083489188,
+                        10.207825773595895
+                    ],
+                    [
+                        -84.36008573479069,
+                        10.207243401522893
+                    ],
+                    [
+                        -84.35984113331948,
+                        10.20661922730541
+                    ],
+                    [
+                        -84.35991436703577,
+                        10.206563010884528
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 241,
+                "codigo_circ": 76.0,
+                "ruta": "L",
+                "poste inicial": "L0033",
+                "poste final": "L0034",
+                "longitud_m": 52.32683967951619,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-11T11:38:31",
+                "responsable": "Olger",
+                "coord_x_ini": 455494.45246261044,
+                "coord_y_ini": 1125796.593839414,
+                "coord_x_fin": 455546.7693177431,
+                "coord_y_fin": 1125795.571675104,
+                "observacion": "Corta de pasto gigante "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.40619098433895,
+                        10.181057395512823
+                    ],
+                    [
+                        -84.40571349811542,
+                        10.18104874599455
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 242,
+                "codigo_circ": 76.0,
+                "ruta": "L",
+                "poste inicial": "L0074",
+                "poste final": "L0073",
+                "longitud_m": 68.38288125730304,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-11T17:38:31",
+                "responsable": "Olger",
+                "coord_x_ini": 455496.9889,
+                "coord_y_ini": 1125771.558,
+                "coord_x_fin": 455565.3556,
+                "coord_y_fin": 1125771.632,
+                "observacion": "Guadalupe Rio Tapezco "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.40616754900138,
+                        10.18083106187757
+                    ],
+                    [
+                        -84.40580137901553,
+                        10.180825294346763
+                    ],
+                    [
+                        -84.40554359535939,
+                        10.180832504906327
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 243,
+                "codigo_circ": 79.0,
+                "ruta": "H",
+                "poste inicial": "H0133",
+                "poste final": "H0410",
+                "longitud_m": 79.13600365748555,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-11T14:39:57",
+                "responsable": "Olger",
+                "coord_x_ini": 461989.3388246928,
+                "coord_y_ini": 1128259.4079499827,
+                "coord_x_fin": 462067.66166455264,
+                "coord_y_fin": 1128270.7234186505,
+                "observacion": "Las minas finca de la asada"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.3469386834809,
+                        10.203393367432733
+                    ],
+                    [
+                        -84.34622391882664,
+                        10.203496436015449
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 244,
+                "codigo_circ": 79.0,
+                "ruta": "H",
+                "poste inicial": "H0312",
+                "poste final": "H0313",
+                "longitud_m": 80.82020718751629,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-12T09:41:19",
+                "responsable": "Olger",
+                "coord_x_ini": 460444.6682482756,
+                "coord_y_ini": 1128153.1624204873,
+                "coord_x_fin": 460453.4235,
+                "coord_y_fin": 1128233.507,
+                "observacion": "100 mts antes de la planta "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.36103624453658,
+                        10.202417455794784
+                    ],
+                    [
+                        -84.36095715153007,
+                        10.203143985214849
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 245,
+                "codigo_circ": 79.0,
+                "ruta": "C",
+                "poste inicial": "C0182",
+                "poste final": "C0093",
+                "longitud_m": 61.381783929905666,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-15T10:06:02",
+                "responsable": "Olger",
+                "coord_x_ini": 455398.4977,
+                "coord_y_ini": 1129890.3,
+                "coord_x_fin": 455459.87688349956,
+                "coord_y_fin": 1129890.8599757012,
+                "observacion": "Tapezco 10pm a oeste del cementerio "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.40711373395895,
+                        10.218069640917575
+                    ],
+                    [
+                        -84.40655349290178,
+                        10.218075403210182
+                    ],
+                    [
+                        -84.4065534930521,
+                        10.218075402990298
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 246,
+                "codigo_circ": 79.0,
+                "ruta": "C",
+                "poste inicial": "C0240",
+                "poste final": "C0243",
+                "longitud_m": 77.36014385817104,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-15T10:25:05",
+                "responsable": "Olger",
+                "coord_x_ini": 454685.5304,
+                "coord_y_ini": 1129879.328,
+                "coord_x_fin": 454749.04750170093,
+                "coord_y_fin": 1129920.3789265973,
+                "observacion": "Calle cementerio abajo limpieza de medidor y secundario "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.41362131448324,
+                        10.217962247041472
+                    ],
+                    [
+                        -84.41318125869508,
+                        10.218163703256229
+                    ],
+                    [
+                        -84.41304203284176,
+                        10.218334144132811
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 247,
+                "codigo_circ": 79.0,
+                "ruta": "C",
+                "poste inicial": "C0064",
+                "poste final": "C0056",
+                "longitud_m": 51.94884597956954,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-15T12:05:43",
+                "responsable": "Olger",
+                "coord_x_ini": 455279.6213,
+                "coord_y_ini": 1129913.487,
+                "coord_x_fin": 455267.0081481602,
+                "coord_y_fin": 1129963.8813548354,
+                "observacion": "Tapezco segunda entrada de la torre "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.40819906280142,
+                        10.218277929800527
+                    ],
+                    [
+                        -84.40831477275798,
+                        10.218733426708228
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 248,
+                "codigo_circ": 438.0,
+                "ruta": "P",
+                "poste inicial": "P0064",
+                "poste final": "P0018",
+                "longitud_m": 148.7842395410843,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-16T12:09:01",
+                "responsable": "Olger",
+                "coord_x_ini": 448858.0209,
+                "coord_y_ini": 1120303.426,
+                "coord_x_fin": 449005.3741,
+                "coord_y_fin": 1120320.556,
+                "observacion": "Esplotec"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.46668672663893,
+                        10.131310265526933
+                    ],
+                    [
+                        -84.46611715320478,
+                        10.131428124991551
+                    ],
+                    [
+                        -84.46534233614268,
+                        10.131467052411162
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 249,
+                "codigo_circ": 79.0,
+                "ruta": "H",
+                "poste inicial": "H0025",
+                "poste final": "H0026",
+                "longitud_m": 186.6268555520612,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-18T09:35:50",
+                "responsable": "Olger",
+                "coord_x_ini": 459159.6536135931,
+                "coord_y_ini": 1126969.6238323723,
+                "coord_x_fin": 459290.757,
+                "coord_y_fin": 1127102.445,
+                "observacion": "Limpieza de acometidas Parcelas de bosque seco "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.37275244087891,
+                        10.191703241709392
+                    ],
+                    [
+                        -84.37155726063772,
+                        10.192905512875551
+                    ],
+                    [
+                        -84.37155726045924,
+                        10.192905515197632
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 250,
+                "codigo_circ": 79.0,
+                "ruta": "H",
+                "poste inicial": "H0031",
+                "poste final": "H0454",
+                "longitud_m": 243.99755599092853,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-18T09:10:58",
+                "responsable": "Olger",
+                "coord_x_ini": 458740.27212988085,
+                "coord_y_ini": 1126651.0707450667,
+                "coord_x_fin": 458573.383,
+                "coord_y_fin": 1126473.11,
+                "observacion": "Limpieza de acometida y línea primaria "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.37657672471431,
+                        10.188818637359635
+                    ],
+                    [
+                        -84.3776409500833,
+                        10.187670557525983
+                    ],
+                    [
+                        -84.37809799975719,
+                        10.187207832535691
+                    ],
+                    [
+                        -84.37809799975304,
+                        10.187207836735135
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 251,
+                "codigo_circ": 79.0,
+                "ruta": "H",
+                "poste inicial": "H0000",
+                "poste final": "H0000",
+                "longitud_m": 10.540803943313938,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-18T09:12:48",
+                "responsable": "-1",
+                "coord_x_ini": 458892.321192962,
+                "coord_y_ini": 1126874.7040366374,
+                "coord_x_fin": 458884.27375628566,
+                "coord_y_fin": 1126871.563573544,
+                "observacion": "Limpieza de medidor "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.3751913610636,
+                        10.19084222700557
+                    ],
+                    [
+                        -84.37527373311569,
+                        10.190813737724358
+                    ],
+                    [
+                        -84.37526477602219,
+                        10.190813748007072
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 252,
+                "codigo_circ": 79.0,
+                "ruta": "C",
+                "poste inicial": "C0048",
+                "poste final": "C0046",
+                "longitud_m": 52.05485549841418,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-18T11:03:37",
+                "responsable": "Olger",
+                "coord_x_ini": 456471.3283,
+                "coord_y_ini": 1129981.51,
+                "coord_x_fin": 456421.8847,
+                "coord_y_fin": 1129965.23,
+                "observacion": "Limpieza de acometida externa "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.39732233652825,
+                        10.218906397973344
+                    ],
+                    [
+                        -84.39777345878281,
+                        10.218758651697794
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 253,
+                "codigo_circ": 79.0,
+                "ruta": "C",
+                "poste inicial": "C0218",
+                "poste final": "C0043",
+                "longitud_m": 33.5129904892296,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-18T11:46:29",
+                "responsable": "Olger",
+                "coord_x_ini": 456568.7295738333,
+                "coord_y_ini": 1130000.048335703,
+                "coord_x_fin": 456535.2939252049,
+                "coord_y_fin": 1129997.7728286542,
+                "observacion": "Limpieza de acometida externa y medidor "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.39643349666616,
+                        10.219075095003808
+                    ],
+                    [
+                        -84.39673866119418,
+                        10.219054149713282
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 254,
+                "codigo_circ": 79.0,
+                "ruta": "C",
+                "poste inicial": "C0245",
+                "poste final": "C0244",
+                "longitud_m": 42.3219099281495,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-18T13:16:37",
+                "responsable": "Olger",
+                "coord_x_ini": 456109.3149808265,
+                "coord_y_ini": 1129979.885023796,
+                "coord_x_fin": 456078.4695,
+                "coord_y_fin": 1129950.908,
+                "observacion": "Limpieza de acometida y medidor "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.40062665868213,
+                        10.218887662081395
+                    ],
+                    [
+                        -84.4009078775621,
+                        10.21862531753661
+                    ],
+                    [
+                        -84.40090787785103,
+                        10.218625319706387
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 255,
+                "codigo_circ": 79.0,
+                "ruta": "C",
+                "poste inicial": "C0000",
+                "poste final": "C0000",
+                "longitud_m": 47.11339344634894,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-18T13:53:53",
+                "responsable": "Olger",
+                "coord_x_ini": 455435.6370768862,
+                "coord_y_ini": 1130216.874590321,
+                "coord_x_fin": 455418.1215337883,
+                "coord_y_fin": 1130260.611046419,
+                "observacion": "Limpieza de medidores "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.40677849375757,
+                        10.221022791819298
+                    ],
+                    [
+                        -84.40693887402246,
+                        10.221418035874176
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 256,
+                "codigo_circ": 79.0,
+                "ruta": "C",
+                "poste inicial": "C0182",
+                "poste final": "C0183",
+                "longitud_m": 64.12134932460982,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-19T11:18:10",
+                "responsable": "Olger",
+                "coord_x_ini": 455398.4977,
+                "coord_y_ini": 1129890.3,
+                "coord_x_fin": 455336.0948340084,
+                "coord_y_fin": 1129905.0454994913,
+                "observacion": "Derrama con grúa "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.40711373395895,
+                        10.218069640917575
+                    ],
+                    [
+                        -84.40768349495873,
+                        10.21820225082136
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 257,
+                "codigo_circ": 79.0,
+                "ruta": "C",
+                "poste inicial": "C0058",
+                "poste final": "C0179",
+                "longitud_m": 84.98660279714292,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-19T13:19:40",
+                "responsable": "Olger",
+                "coord_x_ini": 455065.9226,
+                "coord_y_ini": 1129883.945,
+                "coord_x_fin": 454994.3925,
+                "coord_y_fin": 1129929.838,
+                "observacion": "Camino al cementerio un kilo metro hacia abajo "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.41014928673503,
+                        10.218008377707827
+                    ],
+                    [
+                        -84.41080272041235,
+                        10.218422497662555
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 258,
+                "codigo_circ": 76.0,
+                "ruta": "L",
+                "poste inicial": "L0000",
+                "poste final": "L0000",
+                "longitud_m": 147.17522344334097,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-22T12:12:14",
+                "responsable": "Olger",
+                "coord_x_ini": 451680.13382581144,
+                "coord_y_ini": 1120858.2354122044,
+                "coord_x_fin": 451823.0063009875,
+                "coord_y_fin": 1120828.7861681483,
+                "observacion": "Derrama proyecto info "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.44094145223855,
+                        10.136362136193032
+                    ],
+                    [
+                        -84.44057132390213,
+                        10.136354955886608
+                    ],
+                    [
+                        -84.4402764702881,
+                        10.13631197243482
+                    ],
+                    [
+                        -84.43991586011833,
+                        10.136194570314768
+                    ],
+                    [
+                        -84.43963733754275,
+                        10.136097617359418
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 261,
+                "codigo_circ": 79.0,
+                "ruta": "H",
+                "poste inicial": "H0298",
+                "poste final": "H0300",
+                "longitud_m": 72.75266739176209,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-23T16:37:10",
+                "responsable": "Olger",
+                "coord_x_ini": 460095.4947828995,
+                "coord_y_ini": 1127961.169669329,
+                "coord_x_fin": 460167.86034355377,
+                "coord_y_fin": 1127953.6745880211,
+                "observacion": "Después del búho a mano izquierda "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.3642212634803,
+                        10.200678001272077
+                    ],
+                    [
+                        -84.36356069204798,
+                        10.200610969922508
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 262,
+                "codigo_circ": 79.0,
+                "ruta": "B",
+                "poste inicial": "B0312",
+                "poste final": "B0426",
+                "longitud_m": 240.2966954947612,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-08T22:06:30",
+                "responsable": "Olger",
+                "coord_x_ini": 452036.2347,
+                "coord_y_ini": 1129226.484,
+                "coord_x_fin": 452190.9556590044,
+                "coord_y_fin": 1129408.1094094855,
+                "observacion": "La peña "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.43779500007186,
+                        10.21202800030606
+                    ],
+                    [
+                        -84.43740499980171,
+                        10.212342999209238
+                    ],
+                    [
+                        -84.43680199987602,
+                        10.213227998693863
+                    ],
+                    [
+                        -84.43638503314988,
+                        10.213672054912065
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 263,
+                "codigo_circ": 79.0,
+                "ruta": "B",
+                "poste inicial": "B0308",
+                "poste final": "B0449",
+                "longitud_m": 27.156221759354704,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-08T22:07:36",
+                "responsable": "Olger",
+                "coord_x_ini": 452150.7634,
+                "coord_y_ini": 1129092.944,
+                "coord_x_fin": 452165.6916,
+                "coord_y_fin": 1129115.629,
+                "observacion": "La peña "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.43674799953882,
+                        10.210822002115753
+                    ],
+                    [
+                        -84.43661202356446,
+                        10.211027290475288
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 264,
+                "codigo_circ": 79.0,
+                "ruta": "H",
+                "poste inicial": "H0000",
+                "poste final": "H0000",
+                "longitud_m": 141.25477918123383,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-10T22:10:31",
+                "responsable": "Olger",
+                "coord_x_ini": 458037.8753190517,
+                "coord_y_ini": 1128253.3977447124,
+                "coord_x_fin": 458039.0800326771,
+                "coord_y_fin": 1128251.635458563,
+                "observacion": "Palmira bio genicos"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.38300469346045,
+                        10.203298710818684
+                    ],
+                    [
+                        -84.38294714895574,
+                        10.203306579867848
+                    ],
+                    [
+                        -84.38240366264341,
+                        10.203488366873858
+                    ],
+                    [
+                        -84.38238729061933,
+                        10.203476083063684
+                    ],
+                    [
+                        -84.38299367869249,
+                        10.203282789925236
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 265,
+                "codigo_circ": 79.0,
+                "ruta": "F",
+                "poste inicial": "F0096",
+                "poste final": "F0094",
+                "longitud_m": 126.76180282070511,
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-18T15:45:57",
+                "responsable": "Olger",
+                "coord_x_ini": 457001.4537722045,
+                "coord_y_ini": 1131411.6906127892,
+                "coord_x_fin": 457074.0859937865,
+                "coord_y_fin": 1131307.8311128793,
+                "observacion": "La brisas quesos ceci"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.3924993954765,
+                        10.231843270981415
+                    ],
+                    [
+                        -84.39220883284686,
+                        10.231413084812342
+                    ],
+                    [
+                        -84.39183525302693,
+                        10.230905021565144
                     ]
                 ],
                 "type": "LineString"
