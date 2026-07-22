@@ -11,6 +11,118 @@ var json_control_vegetacion_car_4 = {
         {
             "type": "Feature",
             "properties": {
+                "fid": 219,
+                "codigo_circ": 76.0,
+                "ruta": "K",
+                "poste inicial": "K0051",
+                "poste final": "K0052",
+                "longitud_m": "NULL",
+                "proyecto": "NULL",
+                "fecha_registro": "2026-07-21T18:58:04",
+                "responsable": "Olger",
+                "coord_x_ini": "NULL",
+                "coord_y_ini": "NULL",
+                "coord_x_fin": "NULL",
+                "coord_y_fin": "NULL",
+                "observacion": "250 metros calle Solis "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.38824280410917,
+                        10.173411864618137
+                    ],
+                    [
+                        -84.3896068894173,
+                        10.173056313159845
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 234,
+                "codigo_circ": 79.0,
+                "ruta": "E",
+                "poste inicial": "E0030",
+                "poste final": "E0061",
+                "longitud_m": "NULL",
+                "proyecto": "NULL",
+                "fecha_registro": "2026-06-04T21:28:36",
+                "responsable": "-1",
+                "coord_x_ini": "NULL",
+                "coord_y_ini": "NULL",
+                "coord_x_fin": "NULL",
+                "coord_y_fin": "NULL",
+                "observacion": "NULL"
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.42083311331177,
+                        10.25150247308901
+                    ],
+                    [
+                        -84.41894910272858,
+                        10.251224319579968
+                    ],
+                    [
+                        -84.41825956131868,
+                        10.25171691646471
+                    ],
+                    [
+                        -84.41788298184001,
+                        10.252634980849683
+                    ],
+                    [
+                        -84.41717087915555,
+                        10.25325773944261
+                    ],
+                    [
+                        -84.41694619325986,
+                        10.25370306246108
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 266,
+                "codigo_circ": 76.0,
+                "ruta": "M",
+                "poste inicial": "0000",
+                "poste final": "0000",
+                "longitud_m": "NULL",
+                "proyecto": "NULL",
+                "fecha_registro": "2026-07-22T18:56:31",
+                "responsable": "Soto",
+                "coord_x_ini": "NULL",
+                "coord_y_ini": "NULL",
+                "coord_x_fin": "NULL",
+                "coord_y_fin": "NULL",
+                "observacion": "Derrama parque solar "
+            },
+            "geometry": {
+                "coordinates": [
+                    [
+                        -84.39703649890427,
+                        10.161448839566553
+                    ],
+                    [
+                        -84.39659115360774,
+                        10.161501530732979
+                    ]
+                ],
+                "type": "LineString"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "fid": 11,
                 "codigo_circ": 76.0,
                 "ruta": "K",
